@@ -1,0 +1,283 @@
+.footer {
+  margin-top: 30px;
+  background-image: linear-gradient(to top, $grey-medium-2, $grey-medium-3);
+  position: relative;
+  font-size: 14px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/waves.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.4;
+  }
+
+  &-inner {
+    position: relative;
+    padding: 55px 0;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      position: absolute;
+      left: 50%;
+      margin-left: -100px;
+      margin-left: -100px;
+    }
+
+    &::before {
+      top: 0;
+      border-top: 30px solid $body-bg;
+      border-top: 30px solid $body-bg;
+    }
+
+    &::after {
+      bottom: 0;
+      border-bottom: 30px solid $body-bg;
+      border-bottom: 30px solid $body-bg;
+    }
+  }
+
+  &-content {
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+
+    &-col-small {
+      width: 32%;
+    }
+
+    &-col-large {
+      width: 38%;
+    }
+  }
+
+  &-title-dashed {
+    font-family: $font-family-bold;
+    border-bottom: 1px dashed $grey-medium;
+    font-size: inherit;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+
+  &-list {
+    li {
+      border-bottom: 1px solid $grey-medium;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+
+      &:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &-form {
+    background-color: $yellow;
+    border-radius: 5px;
+    padding: 20px;
+
+    &-title {
+      font-size: 21px;
+      margin-bottom: 2px;
+    }
+
+    &-innertitle {
+      font-family: $font-family-bold;
+      color: $blue-violet;
+      margin-bottom: 10px;
+    }
+
+    &-check {
+      display: flex;
+    }
+
+    .form-check {
+      min-width: 100px;
+      padding-right: 5px;
+      color: $blue-violet;
+      font-size: 13px;
+      font-family: $font-family-bold;
+      padding-left: 24px;
+      min-height: 24px;
+    }
+
+    .form-check-input {
+      width: 17px;
+      height: 17px;
+      margin-left: -24px;
+      border: 2px solid $blue-violet;
+      background-color: transparent;
+
+      &:checked {
+        background-color: $blue-violet;
+        border-color: $blue-violet;
+      }
+    }
+
+    .form-check-label {
+      position: relative;
+      top: 3px;
+    }
+
+    &-check-policy {
+      font-family: $font-family-medium !important;
+    }
+
+    .btn-pill {
+      border-radius: 5px;
+      background-color: $blue-violet;
+      width: 100%;
+      text-transform: none;
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+
+      &:active,
+      &:hover,
+      &:first-child:active,
+      &:focus-visible {
+        background-color: #3158a1 !important;
+      }
+    }
+  }
+
+  &-address {
+    margin: 0;
+    color: $blue-main;
+
+    a {
+      color: $blue-main;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    strong {
+      min-width: 60px;
+      padding-right: 5px;
+      display: inline-block;
+    }
+
+    &-title {
+      font-size: 16px;
+      font-family: $font-family-extrabold;
+    }
+  }
+
+  &-copy {
+    margin: 0;
+    padding-right: 10px;
+  }
+
+  &-payment-logos {
+    max-width: 200px;
+  }
+
+  &-bottom {
+    background-color: $body-bg;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .footer-content {
+    gap: 15px;
+  }
+
+  .footer-form {
+    padding: 15px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .footer-content {
+    flex-wrap: wrap;
+    gap: 0;
+
+    &-col-small {
+      width: 47%;
+
+      &:last-child {
+        width: 100%;
+        margin-top: 30px;
+      }
+    }
+
+    &-col-large {
+      width: 47%;
+    }
+  }
+
+  .footer-form {
+    padding: 20px;
+  }
+
+  .footer-bottom {
+    padding: 10px 0;
+
+    .footer-copy,
+    .footer-payment-logos {
+      margin: 10px 0;
+      display: inline-block;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-content {
+    display: block;
+  }
+
+  .footer-content-col-small,
+  .footer-content-col-large {
+    width: 100%;
+    margin: 0;
+  }
+
+  .footer-content-col-large {
+    margin: 30px 0;
+  }
+
+  .footer-bottom {
+    text-align: center;
+
+    &-content {
+      display: block !important;
+
+      .footer-copy {
+        display: block;
+        padding-right: 0;
+      }
+    }
+  }
+}

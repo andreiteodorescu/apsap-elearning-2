@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>APSAP E-Learning</title>
+
+    <link href="../css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <a class="visually-hidden-focusable" href="#content"
+      >Mergi direct la contentul principal</a
+    >
+    <header class="header">
+      <div class="container-xxxl">
+        <div class="menu navbar position-static">
+          <div class="menu-left">
+            <a href="#" title="APSAP E-Learning">
+              <img
+                class="logo"
+                src="../assets/images/logo.svg"
+                alt="APSAP E-Learning"
+              />
+            </a>
+          </div>
+
+          <div class="menu-right">
+            <div class="mr-courses">
+              <button
+                id="menuOffer"
+                class="btn btn-link menu-btn"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-auto-close="outside"
+                aria-label="Oferta"
+              >
+                <span class="menu-btn-close"></span>
+                <span class="menu-btn-close-effect"></span>
+                <span class="menu-btn-group">
+                  <svg class="menu-btn-icon">
+                    <use
+                      href="../assets/images/sprite.svg#icon-courseshat"
+                    ></use>
+                  </svg>
+                </span>
+              </button>
+              <div
+                class="main-submenu dropdown-menu"
+                aria-labelledby="menuOffer"
+              >
+                <div class="container-narrow">
+                  <div class="main-submenu-content">
+                    <div class="main-submenu-content-headings">
+                      <h4 class="msch-title">
+                        <span>Potrivit</span> pentru tine!
+                      </h4>
+                      <p class="msch-subtitle">
+                        Mai jos poti vedea toate cele 20 de cursuri acreditate
+                        pe care le oferim acum pe platforma noastra de
+                        E-learning. Poti rasfoi oferta noastra si
+                        <a href="#">aici</a>!
+                      </p>
+                    </div>
+
+                    <nav class="main-submenu-group">
+                      <ul class="main-submenu-list list-unstyled">
+                        <li class="list-group-item">
+                          <div class="list-group-item-text">
+                            <div class="list-group-item-text-inner">
+                              <a class="main-submenu-list-link" href="#"
+                                >Design interior</a
+                              >
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item selected">
+                          <div class="list-group-item-text">
+                            <div class="list-group-item-text-inner">
+                              <a class="main-submenu-list-link" href="#"
+                                >Limba engleza</a
+                              >
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="list-group-item-text">
+                            <div class="list-group-item-text-inner">
+                              <a class="main-submenu-list-link" href="#"
+                                >Inspector SSM</a
+                              >
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <a class="search-toggler btn btn-link" href="#">
+                        <svg class="search-toggler-icon">
+                          <use
+                            href="../assets/images/sprite.svg#icon-magnifier"
+                          ></use>
+                        </svg>
+                        <span class="search-toggler-text"
+                          ><strong>Cauta</strong> un curs</span
+                        >
+                      </a>
+                    </nav>
+
+                    <div class="menu-footer">
+                      <div class="social-media">
+                        <p>Ne găsești și pe Facebook, Instagram & YouTube:</p>
+                        <ul class="social-media-list">
+                          <li
+                            class="social-media-list-item social-media-facebook"
+                          >
+                            <a target="_blank" href="#" title="Facebook">
+                              <svg class="social-media-list-item-icon">
+                                <use
+                                  href="../assets/images/sprite.svg#icon-facebook"
+                                ></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li
+                            class="social-media-list-item social-media-instagram"
+                          >
+                            <a target="_blank" href="#" title="Instagram">
+                              <svg class="social-media-list-item-icon">
+                                <use
+                                  href="../assets/images/sprite.svg#icon-instagram"
+                                ></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li
+                            class="social-media-list-item social-media-youtube"
+                          >
+                            <a target="_blank" href="#" title="Youtube">
+                              <svg class="social-media-list-item-icon">
+                                <use
+                                  href="../assets/images/sprite.svg#icon-youtube"
+                                ></use>
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <p class="menu-copyright">
+                        &copy; 2024 - Centrul de formare APSAP
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mr-user">
+              <button
+                id="menuUser"
+                class="btn btn-link menu-btn"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-auto-close="outside"
+                aria-label="Info"
+              >
+                <span class="menu-btn-close"></span>
+                <span class="menu-btn-close-effect"></span>
+                <span class="menu-btn-group">
+                  <svg class="menu-btn-icon">
+                    <use href="../assets/images/sprite.svg#icon-profile"></use>
+                  </svg>
+                </span>
+                <span class="notifications-badge">1</span>
+              </button>
+              <div
+                class="main-submenu dropdown-menu"
+                aria-labelledby="menuUser"
+              >
+                <div class="container-narrow">
+                  <div class="main-submenu-content">
+                    <div class="main-submenu-content-headings mb-3">
+                      <h4 class="msch-title text-center">Prenume Nume</h4>
+                      <p class="msch-subtitle">
+                        Urmareste-ti notificarile si afla ce pasi trebuie sa
+                        faci ca sa poti primi certificarea dorita, vezi ce
+                        documente trebuie sa urci in platforma si care este
+                        situatia facturilor. Oferta completa:
+                        <a href="#">aici</a>!
+                      </p>
+                    </div>
+
+                    <nav class="main-submenu-group">
+                      <ul class="main-submenu-list list-unstyled">
+                        <li class="list-group-item">
+                          <div class="list-group-item-icon">
+                            <span class="notifications-badge">1</span>
+                            <svg class="item-icon-notification">
+                              <use
+                                href="../assets/images/sprite.svg#icon-notification"
+                              ></use>
+                            </svg>
+                          </div>
+                          <div class="list-group-item-text">
+                            <div class="list-group-item-text-inner">
+                              <a class="main-submenu-list-link" href="#"
+                                >Notificãri</a
+                              >
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item selected">
+                          <div class="list-group-item-icon">
+                            <svg class="item-icon-document">
+                              <use
+                                href="../assets/images/sprite.svg#icon-document"
+                              ></use>
+                            </svg>
+                          </div>
+                          <div class="list-group-item-text">
+                            <div class="list-group-item-text-inner">
+                              <a class="main-submenu-list-link" href="#"
+                                >Documentele mele</a
+                              >
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="list-group-item-icon">
+                            <svg class="item-icon-courses">
+                              <use
+                                href="../assets/images/sprite.svg#icon-tablepeople"
+                              ></use>
+                            </svg>
+                          </div>
+                          <div class="list-group-item-text">
+                            <div class="list-group-item-text-inner">
+                              <a class="main-submenu-list-link" href="#"
+                                >Cursurile mele</a
+                              >
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item special">
+                          <div class="list-group-item-icon">
+                            <svg class="item-icon-logout">
+                              <use
+                                href="../assets/images/sprite.svg#icon-logout"
+                              ></use>
+                            </svg>
+                          </div>
+                          <div class="list-group-item-text">
+                            <div class="list-group-item-text-inner">
+                              <a class="main-submenu-list-link" href="#"
+                                ><strong>Log</strong> out</a
+                              >
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <a class="search-toggler btn btn-link" href="#">
+                        <svg class="search-toggler-icon">
+                          <use
+                            href="../assets/images/sprite.svg#icon-magnifier"
+                          ></use>
+                        </svg>
+                        <span class="search-toggler-text"
+                          ><strong>Cauta</strong> un curs</span
+                        >
+                      </a>
+                    </nav>
+
+                    <div class="menu-footer">
+                      <div class="social-media">
+                        <p>Ne găsești și pe Facebook, Instagram & YouTube:</p>
+                        <ul class="social-media-list">
+                          <li
+                            class="social-media-list-item social-media-facebook"
+                          >
+                            <a target="_blank" href="#" title="Facebook">
+                              <svg class="social-media-list-item-icon">
+                                <use
+                                  href="../assets/images/sprite.svg#icon-facebook"
+                                ></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li
+                            class="social-media-list-item social-media-instagram"
+                          >
+                            <a target="_blank" href="#" title="Instagram">
+                              <svg class="social-media-list-item-icon">
+                                <use
+                                  href="../assets/images/sprite.svg#icon-instagram"
+                                ></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li
+                            class="social-media-list-item social-media-youtube"
+                          >
+                            <a target="_blank" href="#" title="Youtube">
+                              <svg class="social-media-list-item-icon">
+                                <use
+                                  href="../assets/images/sprite.svg#icon-youtube"
+                                ></use>
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <p class="menu-copyright">
+                        &copy; 2024 - Centrul de formare APSAP
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="mr-user mr-user-loggedout">
+              <a class="btn btn-link menu-btn" href="#">
+                <svg class="menu-btn-icon">
+                  <use href="../assets/images/sprite.svg#icon-profile"></use>
+                </svg>
+                <span class="menu-btn-text"
+                  ><strong>Intru</strong> in cont</span
+                >
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="content" class="main">
+      <section class="hero-component">
+        <div class="container-xxxl">Hero</div>
+      </section>
+
+      <section class="stats-component observe">
+        <div class="container-medium text-center">
+          <div class="row">
+            <div class="col">
+              <img
+                class="stats-big-icon"
+                src="../images/experience.svg"
+                alt=""
+              />
+              <div class="stats-big-text stats-big-text-left">
+                <span>16</span>
+              </div>
+              <div class="stats-small-text">de experienta</div>
+            </div>
+            <div class="col">
+              <img class="stats-big-icon" src="../images/cursanti.svg" alt="" />
+              <div class="stats-big-text stats-big-text-center">
+                <span>100.000</span>
+              </div>
+              <div class="stats-small-text">de cursanti</div>
+            </div>
+            <div class="col">
+              <img
+                class="stats-big-icon"
+                src="../images/satisfactie.svg"
+                alt=""
+              />
+              <div class="stats-big-text stats-big-text-right">
+                <span>5/5</span>
+              </div>
+              <div class="stats-small-text">
+                evaluarea gradului de satisfactie
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="component-block">Section</section>
+    </main>
+    <!-- <footer class="footer">
+      <div class="footer-inner">
+        <div class="container-1000">
+          <div class="footer-content">
+            <div class="footer-content-col-small">
+              <h4 class="footer-title-dashed">Link-uri utile</h4>
+              <ul class="list-unstyled footer-list">
+                <li><a href="#" title="">Termeni și condiții</a></li>
+                <li><a href="#" title="">Politica de cookie</a></li>
+                <li><a href="#" title="">Ofertă cursuri</a></li>
+                <li><a href="#" title="">Contactează-ne</a></li>
+                <li><a href="#" title="">Notă de Informare GDPR</a></li>
+                <li>
+                  <a href="#" title=""
+                    >Politica de achiziție, livrare, retur a serviciilor
+                    achiziționate cu plata prin card bancar</a
+                  >
+                </li>
+                <li><a href="#" title="">Locuri de muncă</a></li>
+              </ul>
+            </div>
+            <div class="footer-content-col-large">
+              <div class="footer-form">
+                <h4 class="footer-form-title">
+                  <strong>Rămâi conectat</strong> la educație!
+                </h4>
+                <p class="footer-form-subtitle">
+                  Fii la curent cu noile noastre cursuri online acreditate,
+                  evenimente și webinarii.
+                </p>
+                <form class="needs-validation" novalidate>
+                  <div class="mb-2">
+                    <label
+                      for="footerInputEmail"
+                      class="form-label visually-hidden"
+                      >Email-ul tau</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="footerInputEmail"
+                      placeholder="Email-ul tau"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Va rugam introduceti o adresa de email valida
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="footerInputName"
+                      class="form-label visually-hidden"
+                      >Prenume</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="footerInputName"
+                      placeholder="Prenume"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Va rugam introduceti prenumele
+                    </div>
+                  </div>
+
+                  <p class="footer-form-innertitle">
+                    În ce sector lucrați în acest moment:
+                  </p>
+
+                  <div class="footer-form-check mb-3">
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="sectorCheck1"
+                      />
+                      <label class="form-check-label" for="sectorCheck1"
+                        >Privat</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="sectorCheck2"
+                      />
+                      <label class="form-check-label" for="sectorCheck2"
+                        >Public</label
+                      >
+                    </div>
+                  </div>
+
+                  <div class="form-check footer-form-check-policy mb-2">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="policyCheck"
+                      required
+                    />
+                    <label class="form-check-label" for="policyCheck"
+                      >Sunt de acord cu Politica de confidențialitate.</label
+                    >
+                  </div>
+
+                  <button type="submit" class="btn btn-pill">
+                    Da, ma abonez!
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="footer-content-col-small">
+              <address class="footer-address">
+                <p class="footer-address-title">Centrul de Formare APSAP</p>
+                <p>
+                  <strong>Adresă:</strong> Str. Turturelelor nr. 62, clădirea
+                  Decebal Tower, etaj 6, camera 12, sector 3, București
+                </p>
+                <p class="mb-0"><strong>Telefon:</strong> 0788 124 567</p>
+                <p class="mb-0"><strong>Fax:</strong> (021) 569 61 26</p>
+                <p class="mb-0">
+                  <strong>E-mail:</strong>
+                  <a href="mailto:secretariat@cursuri-functionari.ro"
+                    >secretariat@cursuri-functionari.ro</a
+                  >
+                </p>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container-1000">
+          <div
+            class="footer-bottom-content d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap"
+          >
+            <p class="footer-copy">
+              &copy; <strong>2023</strong> - Centrul de Formare APSAP
+            </p>
+
+            <img
+              class="footer-payment-logos"
+              src="../images/payment-logos.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/prod/main.js"></script>
+  </body>
+</html>

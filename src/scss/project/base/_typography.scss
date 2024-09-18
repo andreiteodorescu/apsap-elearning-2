@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "RubrikEdgeNew-Bold";
+  src: url("../assets/fonts/rubrikedgenew-bold-webfont.woff2") format("woff2"),
+    url("../assets/fonts/rubrikedgenew-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RubrikEdgeNew-BoldItalic";
+  src: url("../assets/fonts/rubrikedgenew-bolditalic-webfont.woff2")
+      format("woff2"),
+    url("../assets/fonts/rubrikedgenew-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RubrikEdgeNew-Extrabold";
+  src: url("../assets/fonts/rubrikedgenew-extrabold-webfont.woff2")
+      format("woff2"),
+    url("../assets/fonts/rubrikedgenew-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RubrikEdgeNew-Light";
+  src: url("../assets/fonts/rubrikedgenew-light-webfont.woff2") format("woff2"),
+    url("../assets/fonts/rubrikedgenew-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RubrikEdgeNew-Medium";
+  src: url("../assets/fonts/rubrikedgenew-medium-webfont.woff2") format("woff2"),
+    url("../assets/fonts/rubrikedgenew-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RubrikEdgeNew-Regular";
+  src: url("../assets/fonts/rubrikedgenew-regular-webfont.woff2")
+      format("woff2"),
+    url("../assets/fonts/rubrikedgenew-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RubrikEdgeNew-RegularItalic";
+  src: url("../assets/fonts/rubrikedgenew-regularitalic-webfont.woff2")
+      format("woff2"),
+    url("../assets/fonts/rubrikedgenew-regularitalic-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BebasNeue-Regular";
+  src: url("../assets/fonts/bebasneue-webfont.woff2") format("woff2"),
+    url("../assets/fonts/bebasneue-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+b,
+strong {
+  font-weight: normal;
+  font-family: $font-family-bold;
+}
+
+.main-title {
+  font-family: $font-family-bebas-regular;
+  font-size: 150px;
+  line-height: 1;
+  margin-bottom: 0;
+  color: $blue-main;
+
+  &-medium {
+    font-size: 100px;
+  }
+}
+
+.second-title {
+  font-size: 36px;
+  font-family: $font-family-bold;
+  margin-bottom: 0;
+  color: $blue-main;
+  max-width: 1080px;
+
+  &-fluid {
+    max-width: none;
+  }
+
+  &-black {
+    color: inherit;
+  }
+
+  &-thin {
+    font-family: $font-family-light;
+  }
+
+  &-bolder {
+    font-family: $font-family-extrabold;
+  }
+
+  &-small {
+    font-size: 30px;
+  }
+
+  .st-new-row-thin {
+    display: block;
+    font-family: $font-family-base;
+    line-height: 1;
+  }
+}
+
+.subtitle-text {
+  color: $blue-main;
+  margin-bottom: 0;
+  max-width: 1080px;
+
+  &-fluid {
+    max-width: none;
+  }
+
+  &-black {
+    color: inherit;
+  }
+
+  span {
+    font-family: $font-family-bold;
+  }
+
+  &-medium {
+    font-size: 21px;
+  }
+}
+
+.text-center {
+  .second-title,
+  .subtitle-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.random-big-title {
+  font-family: $font-family-bold;
+  font-size: 36px;
+  margin-bottom: 50px;
+  line-height: 1;
+
+  &-zoom {
+    font-family: $font-family-bebas-regular;
+    font-size: 150px;
+  }
+
+  &-yellow {
+    color: $yellow;
+  }
+
+  @include media-breakpoint-down(md) {
+    &-zoom {
+      font-size: 100px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    font-size: 30px;
+
+    &-zoom {
+      font-size: 80px;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .main-title {
+    font-family: $font-family-bebas-regular;
+    font-size: 80px;
+    line-height: 1;
+    margin-bottom: 0;
+    color: $blue-main;
+
+    &-medium {
+      font-size: 50px;
+    }
+  }
+
+  .second-title {
+    font-size: 28px;
+
+    &-small {
+      font-size: 22px;
+    }
+  }
+
+  .subtitle-text {
+    font-size: 13px;
+  }
+}

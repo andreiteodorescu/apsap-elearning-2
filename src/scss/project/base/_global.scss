@@ -1,0 +1,26 @@
+body {
+  background-color: #101228;
+  background-image: url("../assets/images/diamond.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.container-xxxl {
+  @include make-container();
+
+  @media (min-width: 1601px) {
+    max-width: 1600px;
+  }
+}
+
+.container-narrow {
+  @include make-container();
+
+  @media (min-width: 851px) {
+    max-width: 850px;
+  }
+}
+
+.component-block {
+  margin-top: 130px;
+}
