@@ -3,6 +3,7 @@ body {
   background-image: url("../assets/images/diamond.png");
   background-position: center top;
   background-repeat: no-repeat;
+  color: #fff;
 }
 
 .container-xxxl {
@@ -22,5 +23,13 @@ body {
 }
 
 .component-block {
-  margin-top: 130px;
+  margin-top: 90px;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.green {
+  color: $green;
 }

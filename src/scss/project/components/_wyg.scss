@@ -1,0 +1,99 @@
+.wyg-component {
+  margin-top: 60px;
+
+  .row {
+    display: inline-flex;
+  }
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(30px);
+  position: relative;
+}
+
+/* Pseudo-elements for additional circles */
+.circle::before,
+.circle::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* Main circle animation */
+.wyg-component.observe .circle {
+  animation: circleIn 0.5s forwards, wave 2s 1.5s forwards;
+}
+
+/* Left circle (::before) animation */
+.wyg-component.observe .circle::before {
+  animation: circleLeftIn 0.5s 0.5s forwards, waveLeft 2s 1.6s forwards;
+}
+
+/* Right circle (::after) animation */
+.wyg-component.observe .circle::after {
+  animation: circleRightIn 0.5s 0.5s forwards, waveRight 2s 1.7s forwards;
+}
+
+.wyg-presentation {
+  display: flex;
+  align-items: flex-end;
+
+  &-icon {
+    width: 50px;
+    height: 50px;
+    fill: #fff;
+    margin-right: 42px;
+  }
+}
+
+.wyg-text {
+  text-align: left;
+  font-size: 16px;
+  font-family: $font-family-light;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.wyg-col {
+  width: 238px;
+  flex: 0 0 auto;
+  line-height: 1.3;
+  margin-left: 25px;
+  margin-right: 25px;
+
+  &.yellow {
+    .circle,
+    .circle::before,
+    .circle::after {
+      background-color: $yellow;
+    }
+
+    .wyg-presentation-icon {
+      fill: $yellow;
+    }
+  }
+
+  &.green {
+    .circle,
+    .circle::before,
+    .circle::after {
+      background-color: $green;
+    }
+
+    .wyg-presentation-icon {
+      fill: $green;
+    }
+  }
+}

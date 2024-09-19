@@ -82,14 +82,14 @@ strong {
 }
 
 .main-title {
-  font-family: $font-family-bebas-regular;
-  font-size: 150px;
+  font-family: $font-family-base;
+  font-size: 48px;
   line-height: 1;
-  margin-bottom: 0;
-  color: $blue-main;
+  margin-bottom: 45px;
 
-  &-medium {
-    font-size: 100px;
+  span {
+    display: block;
+    font-family: $font-family-extrabold;
   }
 }
 

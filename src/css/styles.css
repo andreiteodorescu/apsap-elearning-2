@@ -12853,11 +12853,81 @@ For PUL: If you need to reduce the stylesheet file size delete de above lines an
     transform: rotate(-45deg) translate(-54px, 6px);
   }
 }
+/* Keyframes for the main circle appearance */
+@keyframes circleIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Keyframes for the left circle appearance */
+@keyframes circleLeftIn {
+  from {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-30px, 0); /* Move left by 20px */
+  }
+}
+/* Keyframes for the right circle appearance */
+@keyframes circleRightIn {
+  from {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(30px, 0); /* Move right by 20px */
+  }
+}
+/* Wave animation for the main circle */
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25%, 75% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+/* Wave animation for the left circle */
+@keyframes waveLeft {
+  0%, 100% {
+    transform: translate(-30px, 0);
+  }
+  25%, 75% {
+    transform: translate(-30px, 10px);
+  }
+  50% {
+    transform: translate(-30px, 0);
+  }
+}
+/* Wave animation for the right circle */
+@keyframes waveRight {
+  0%, 100% {
+    transform: translate(30px, 0);
+  }
+  25%, 75% {
+    transform: translate(30px, -10px);
+  }
+  50% {
+    transform: translate(30px, 0);
+  }
+}
 body {
   background-color: #101228;
   background-image: url("../assets/images/diamond.png");
   background-position: center top;
   background-repeat: no-repeat;
+  color: #fff;
 }
 
 .container-xxxl {
@@ -12891,7 +12961,15 @@ body {
 }
 
 .component-block {
-  margin-top: 130px;
+  margin-top: 90px;
+}
+
+.yellow {
+  color: #f9be13;
+}
+
+.green {
+  color: #5eb461;
 }
 
 @font-face {
@@ -12957,14 +13035,14 @@ strong {
 }
 
 .main-title {
-  font-family: "BebasNeue-Regular", Tahoma, Arial, Helvetica, sans-serif;
-  font-size: 150px;
+  font-family: "RubrikEdgeNew-Regular", Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 48px;
   line-height: 1;
-  margin-bottom: 0;
-  color: #101228;
+  margin-bottom: 45px;
 }
-.main-title-medium {
-  font-size: 100px;
+.main-title span {
+  display: block;
+  font-family: "RubrikEdgeNew-Extrabold", Tahoma, Arial, Helvetica, sans-serif;
 }
 
 .second-title {
@@ -13285,6 +13363,10 @@ strong {
     margin-bottom: 72px !important;
   }
 }
+.header {
+  margin-bottom: 40px;
+}
+
 .menu {
   padding: 35px 0 0;
 }
@@ -13687,6 +13769,123 @@ strong {
 }
 .social-media-facebook a .social-media-list-item-icon {
   width: 12px;
+}
+
+.hero-contain {
+  position: relative;
+  height: 400px;
+}
+
+.hero-multiuse {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+}
+.hero-multiuse-image, .hero-multiuse-video {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1199.98px) {
+  .hero-contain {
+    height: 350px;
+  }
+}
+@media (max-width: 899px) {
+  .hero-contain {
+    height: 230px;
+  }
+}
+.wyg-component {
+  margin-top: 60px;
+}
+.wyg-component .row {
+  display: inline-flex;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(30px);
+  position: relative;
+}
+
+/* Pseudo-elements for additional circles */
+.circle::before,
+.circle::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* Main circle animation */
+.wyg-component.observe .circle {
+  animation: circleIn 0.5s forwards, wave 2s 1.5s forwards;
+}
+
+/* Left circle (::before) animation */
+.wyg-component.observe .circle::before {
+  animation: circleLeftIn 0.5s 0.5s forwards, waveLeft 2s 1.6s forwards;
+}
+
+/* Right circle (::after) animation */
+.wyg-component.observe .circle::after {
+  animation: circleRightIn 0.5s 0.5s forwards, waveRight 2s 1.7s forwards;
+}
+
+.wyg-presentation {
+  display: flex;
+  align-items: flex-end;
+}
+.wyg-presentation-icon {
+  width: 50px;
+  height: 50px;
+  fill: #fff;
+  margin-right: 42px;
+}
+
+.wyg-text {
+  text-align: left;
+  font-size: 16px;
+  font-family: "RubrikEdgeNew-Light", Tahoma, Arial, Helvetica, sans-serif;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.wyg-col {
+  width: 238px;
+  flex: 0 0 auto;
+  line-height: 1.3;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.wyg-col.yellow .circle,
+.wyg-col.yellow .circle::before,
+.wyg-col.yellow .circle::after {
+  background-color: #f9be13;
+}
+.wyg-col.yellow .wyg-presentation-icon {
+  fill: #f9be13;
+}
+.wyg-col.green .circle,
+.wyg-col.green .circle::before,
+.wyg-col.green .circle::after {
+  background-color: #5eb461;
+}
+.wyg-col.green .wyg-presentation-icon {
+  fill: #5eb461;
 }
 
 .footer {
