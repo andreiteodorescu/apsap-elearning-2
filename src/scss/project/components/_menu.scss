@@ -1,9 +1,29 @@
 .header {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 110px;
+    background-image: linear-gradient(to top, #193242, #101228);
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-out;
+  }
 }
 
 .menu {
   padding: 35px 0 0;
+
+  &-left {
+    position: relative;
+  }
 }
 
 .logo {
@@ -400,6 +420,25 @@
   justify-content: center;
   font-family: $font-family-bold;
   color: #fff;
+}
+
+.header-sticky {
+  position: fixed !important;
+  width: 100%;
+  z-index: 11;
+  overflow: initial;
+  top: 0;
+
+  &::before {
+    opacity: 1;
+  }
+
+  &-body {
+    padding-top: 110px;
+  }
+
+  // body:not(.nav-active) & {
+  // }
 }
 
 @media (max-width: 899px) {

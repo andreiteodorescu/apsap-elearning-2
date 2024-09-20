@@ -12822,7 +12822,7 @@ For PUL: If you need to reduce the stylesheet file size delete de above lines an
     background-color: transparent;
   }
   100% {
-    background-color: #222;
+    background-image: linear-gradient(to top, #193242, #101228);
   }
 }
 @keyframes activeMenuXEffectAfter {
@@ -13069,24 +13069,24 @@ strong {
 .btn-pill {
   border: none;
   background-color: #a1a1a1;
-  color: #fff;
+  color: #101228;
   text-transform: uppercase;
-  padding-top: 12px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 12px;
   padding-left: 15px;
   padding-right: 15px;
   transition: background-color 0.3s ease-in-out;
-  border-radius: 7px;
-  font-family: "RubrikEdgeNew-Medium", Tahoma, Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  font-family: "RubrikEdgeNew-Extrabold", Tahoma, Arial, Helvetica, sans-serif;
   line-height: 1;
   font-size: 18px;
 }
 .btn-pill span {
-  font-family: "RubrikEdgeNew-Light", Tahoma, Arial, Helvetica, sans-serif;
+  font-family: "RubrikEdgeNew-Medium", Tahoma, Arial, Helvetica, sans-serif;
 }
 .btn-pill:active, .btn-pill:hover, .btn-pill:first-child:active, .btn-pill:focus-visible {
   background-color: #b5b5b5 !important;
-  color: #fff !important;
+  color: #101228 !important;
 }
 .btn-pill-radius {
   border-radius: 4px;
@@ -13107,9 +13107,14 @@ strong {
     width: 95%;
   }
 }
+.btn-pill-green {
+  background-color: #5eb461;
+}
+.btn-pill-green:active, .btn-pill-green:hover, .btn-pill-green:first-child:active, .btn-pill-green:focus-visible {
+  background-color: #66cb69 !important;
+}
 .btn-pill-yellow {
   background-color: #f9be13;
-  color: #333232;
 }
 .btn-pill-yellow:active, .btn-pill-yellow:hover, .btn-pill-yellow:first-child:active, .btn-pill-yellow:focus-visible {
   background-color: #f7c750 !important;
@@ -13158,6 +13163,19 @@ strong {
   .btn-pill span {
     font-family: "RubrikEdgeNew-Regular", Tahoma, Arial, Helvetica, sans-serif;
   }
+}
+
+.magnetic-cta {
+  position: absolute;
+  width: 295px;
+  left: 0;
+  right: 0;
+  top: -23px;
+  margin: 0 auto;
+}
+.magnetic-cta-down {
+  top: auto;
+  bottom: -21px;
 }
 
 .form-control {
@@ -13291,11 +13309,29 @@ strong {
 }
 
 .header {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 110px;
+  background-image: linear-gradient(to top, #193242, #101228);
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
 }
 
 .menu {
   padding: 35px 0 0;
+}
+.menu-left {
+  position: relative;
 }
 
 .logo {
@@ -13629,6 +13665,20 @@ strong {
   color: #fff;
 }
 
+.header-sticky {
+  position: fixed !important;
+  width: 100%;
+  z-index: 11;
+  overflow: initial;
+  top: 0;
+}
+.header-sticky::before {
+  opacity: 1;
+}
+.header-sticky-body {
+  padding-top: 110px;
+}
+
 @media (max-width: 899px) {
   .main-submenu {
     background-size: cover;
@@ -13699,6 +13749,77 @@ strong {
   }
   .nav-active .menu-btn-active .menu-btn-close-effect::before {
     animation: activeMenuXEffectBefore 0.3s ease-in-out 0.4s forwards;
+  }
+}
+/* CSS Styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 10px;
+}
+
+/* Positioning grid items */
+.item1 {
+  grid-column: 1;
+  grid-row: 1/span 2; /* Spans two rows */
+}
+
+.item2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.item3 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.item4 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.item5 {
+  grid-column: 1/span 2; /* Spans two columns */
+  grid-row: 4;
+}
+
+.item6 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+/* Media query for screens under 1600px */
+@media (max-width: 1600px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column */
+    grid-template-rows: repeat(6, auto);
+  }
+  /* Reordering grid items */
+  .item1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .item2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .item3 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .item4 {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .item5 {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .item6 {
+    grid-column: 1;
+    grid-row: 6;
   }
 }
 .social-media p {
@@ -13838,7 +13959,7 @@ strong {
   border-radius: 50%;
   display: inline-block;
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(20px);
   position: relative;
 }
 

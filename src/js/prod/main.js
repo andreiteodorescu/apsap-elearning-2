@@ -141,25 +141,27 @@ observerTargets.forEach(function (observerTarget) {
 });
 "use strict";
 
-$('.menu-btn').on("click", function () {
-  $('.menu-btn').removeClass('menu-btn-active');
-  $(this).addClass('menu-btn-active');
-  if (!$(this).hasClass('show')) {
-    $('body').removeClass('nav-active');
+$(".menu-btn").on("click", function () {
+  $(".menu-btn").removeClass("menu-btn-active");
+  $(this).addClass("menu-btn-active");
+  if (!$(this).hasClass("show")) {
+    $("body").removeClass("nav-active");
   } else {
-    $('body').addClass('nav-active');
+    $("body").addClass("nav-active");
   }
 });
 
 // Sticky menu when scrolling
 var mainHeader = $(".header");
-var headerScrollThreshold = 80;
+var headerScrollThreshold = 110;
 $(window).on("scroll", function () {
   var scroll = $(window).scrollTop();
   if (scroll >= headerScrollThreshold) {
-    mainHeader.addClass('header-sticky');
+    mainHeader.addClass("header-sticky");
+    $("body").addClass("header-sticky-body");
   } else {
     mainHeader.removeClass("header-sticky");
+    $("body").removeClass("header-sticky-body");
   }
 });
 "use strict";

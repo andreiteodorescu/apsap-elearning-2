@@ -1,111 +1,147 @@
 .btns-align {
-    .btn {
-        margin: 5px 7px;
-    }
+  .btn {
+    margin: 5px 7px;
+  }
 }
 
 .btn-pill {
-    border: none;
-    background-color: $grey-extralight-2;
-    color: #fff;
-    text-transform: uppercase;
-    padding-top: 12px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    transition: background-color .3s ease-in-out;
-    border-radius: 7px;
+  border: none;
+  background-color: $grey-extralight-2;
+  color: $blue-main;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 5px;
+  font-family: $font-family-extrabold;
+  line-height: 1;
+  font-size: 18px;
+
+  span {
     font-family: $font-family-medium;
-    line-height: 1;
-    font-size: 18px;
+  }
 
-    span {
-        font-family: $font-family-light;
-    }
+  &:active,
+  &:hover,
+  &:first-child:active,
+  &:focus-visible {
+    background-color: $grey-hover !important;
+    color: $blue-main !important;
+  }
 
-    &:active, &:hover, &:first-child:active, &:focus-visible {
-        background-color: $grey-hover !important;
-        color: #fff !important;
-    }
+  &-radius {
+    border-radius: 4px;
+  }
 
-    &-radius {
-        border-radius: 4px;
-    }
+  &-shadow {
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
+  }
 
-    &-shadow {
-        box-shadow: 0 3px 2px rgba(0, 0, 0, .2);
-    }
+  &-long {
+    width: 32%;
 
-    &-long {
-        width: 32%;
-
-        @include media-breakpoint-down(xl) {
-            width: 50%;
-        }
-
-        @include media-breakpoint-down(md) {
-            width: 95%;
-        }
-    }
-
-    &-yellow {
-        background-color: $yellow;
-        color: $grey-dark-2;
-
-        &:active, &:hover, &:first-child:active, &:focus-visible {
-            background-color: $yellow-hover !important;
-            color: $grey-dark-2 !important;
-        }
-    }
-
-    &-blue {
-        background-color: $blue-violet;
-        color: #fff;
-
-        &:active, &:hover, &:first-child:active, &:focus-visible {
-            background-color: $blue-bonus !important;
-            color: #fff !important;
-        }
-    }
-
-    &-small {
-        min-width: 220px;
-        font-size: 14px;
-        padding-top: 10px;
-        padding-bottom: 8px;
-        padding-left: 10px;
-        padding-right: 10px;
-        font-family: $font-family-bold;
-
-        span {
-            font-family: $font-family-base;
-        }
-    }
-
-    &-big-red {
-        width: 100%;
-        font-size: 25px;
-        font-family: $font-family-extrabold;
-        background-color: $red;
-        height: 55px;
-
-        &-shadow {
-            box-shadow: 0 3px 2px rgba(0, 0, 0, .2);
-        }
-
-        &:active, &:hover, &:first-child:active, &:focus-visible {
-            background-color: $red-hover !important;
-        }
-
-        @media (max-width: 1300px) {
-            font-size: 20px;
-            height: 50px;
-        }
+    @include media-breakpoint-down(xl) {
+      width: 50%;
     }
 
     @include media-breakpoint-down(md) {
-        span {
-            font-family: $font-family-base;
-        }
+      width: 95%;
     }
+  }
+
+  &-green {
+    background-color: $green;
+
+    &:active,
+    &:hover,
+    &:first-child:active,
+    &:focus-visible {
+      background-color: $green-hover !important;
+    }
+  }
+
+  &-yellow {
+    background-color: $yellow;
+
+    &:active,
+    &:hover,
+    &:first-child:active,
+    &:focus-visible {
+      background-color: $yellow-hover !important;
+      color: $grey-dark-2 !important;
+    }
+  }
+
+  &-blue {
+    background-color: $blue-violet;
+    color: #fff;
+
+    &:active,
+    &:hover,
+    &:first-child:active,
+    &:focus-visible {
+      background-color: $blue-bonus !important;
+      color: #fff !important;
+    }
+  }
+
+  &-small {
+    min-width: 220px;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: $font-family-bold;
+
+    span {
+      font-family: $font-family-base;
+    }
+  }
+
+  &-big-red {
+    width: 100%;
+    font-size: 25px;
+    font-family: $font-family-extrabold;
+    background-color: $red;
+    height: 55px;
+
+    &-shadow {
+      box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active,
+    &:hover,
+    &:first-child:active,
+    &:focus-visible {
+      background-color: $red-hover !important;
+    }
+
+    @media (max-width: 1300px) {
+      font-size: 20px;
+      height: 50px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    span {
+      font-family: $font-family-base;
+    }
+  }
+}
+
+.magnetic-cta {
+  position: absolute;
+  width: 295px;
+  left: 0;
+  right: 0;
+  top: -23px;
+  margin: 0 auto;
+
+  &-down {
+    top: auto;
+    bottom: -21px;
+  }
 }
