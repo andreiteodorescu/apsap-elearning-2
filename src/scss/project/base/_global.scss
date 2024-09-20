@@ -5,6 +5,12 @@ body {
   background-repeat: no-repeat;
   color: #fff;
   line-height: 1.4;
+
+  &.course-page {
+    background-image: url(../assets/images/waves.svg);
+    background-size: 1600px auto;
+    background-position: center 110px;
+  }
 }
 
 .container-xxxl {

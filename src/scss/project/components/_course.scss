@@ -1,5 +1,5 @@
 /* CSS Styles */
-.grid-container {
+.course-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(4, auto);
@@ -39,7 +39,7 @@
 
 /* Media query for screens under 1600px */
 @media (max-width: 1600px) {
-  .grid-container {
+  .course-grid-container {
     grid-template-columns: 1fr; /* Single column */
     grid-template-rows: repeat(6, auto);
   }

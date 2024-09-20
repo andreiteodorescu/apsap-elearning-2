@@ -12930,6 +12930,11 @@ body {
   color: #fff;
   line-height: 1.4;
 }
+body.course-page {
+  background-image: url(../assets/images/waves.svg);
+  background-size: 1600px auto;
+  background-position: center 110px;
+}
 
 .container-xxxl {
   --bs-gutter-x: 1.5rem;
@@ -13060,6 +13065,10 @@ strong {
   .main-title {
     font-size: 28px;
   }
+}
+
+.medium-title {
+  font-size: 32px;
 }
 
 .btns-align .btn {
@@ -13752,7 +13761,7 @@ strong {
   }
 }
 /* CSS Styles */
-.grid-container {
+.course-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(4, auto);
@@ -13792,7 +13801,7 @@ strong {
 
 /* Media query for screens under 1600px */
 @media (max-width: 1600px) {
-  .grid-container {
+  .course-grid-container {
     grid-template-columns: 1fr; /* Single column */
     grid-template-rows: repeat(6, auto);
   }
