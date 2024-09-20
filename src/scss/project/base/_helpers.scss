@@ -1,31 +1,40 @@
-.visually-hidden-focusable:focus, .visually-hidden-focusable:focus-within {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: $blue-main;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
+.visually-hidden-focusable:focus,
+.visually-hidden-focusable:focus-within {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: $blue-main;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
 
-    @include media-breakpoint-down(lg) {
-        display: block;
-        width: 100%;
-    }
+  @include media-breakpoint-down(lg) {
+    display: block;
+    width: 100%;
+  }
 }
 
 .mt-6 {
-    margin-top: 72px !important;
+  margin-top: 72px !important;
 }
 
 .mb-6 {
-    margin-bottom: 72px !important;
+  margin-bottom: 72px !important;
 }
 
 @include media-breakpoint-up(lg) {
-    .mt-lg-6 {
-        margin-top: 72px !important;
-    }
+  .mt-lg-6 {
+    margin-top: 72px !important;
+  }
 
-    .mb-lg-6 {
-        margin-bottom: 72px !important;
-    }
+  .mb-lg-6 {
+    margin-bottom: 72px !important;
+  }
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.green {
+  color: $green;
 }

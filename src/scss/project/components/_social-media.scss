@@ -42,4 +42,23 @@
       width: 12px;
     }
   }
+
+  &-footer {
+    text-align: center;
+    margin-bottom: 85px;
+
+    p {
+      color: $blue-main;
+    }
+
+    .social-media-list-item {
+      a {
+        background-color: $blue-main;
+      }
+
+      .social-media-list-item-icon {
+        fill: $grey-light;
+      }
+    }
+  }
 }

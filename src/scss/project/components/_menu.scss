@@ -258,13 +258,21 @@
 
     &-btn {
       position: absolute;
-      right: calc((100% - 768px) / 2);
+      right: calc((100% - 830px) / 2);
+
+      @media (max-width: 845px) {
+        right: 20px;
+      }
     }
 
     &-btn-active {
       left: calc((100% - 768px) / 2);
       right: auto;
       top: 50px;
+
+      @media (max-width: 845px) {
+        left: 50px;
+      }
 
       .notifications-badge {
         display: none;
@@ -383,7 +391,7 @@
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 100%;
+  top: 103%;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -394,7 +402,44 @@
   color: #fff;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 899px) {
+  .main-submenu {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 640px) {
+  .menu-btn-text {
+    display: none;
+  }
+
+  .menu-footer {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .main-submenu-group {
+    margin-bottom: 60px;
+  }
+
+  .main-submenu-content-headings {
+    text-align: center;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .menu-btn-close {
+    width: 30px;
+    height: 30px;
+
+    &::after,
+    &::before {
+      will-change: transform;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
   .menu-btn-close {
     overflow: initial;
   }

@@ -1,0 +1,32 @@
+.grid-info-component-number {
+  color: $green;
+  font-size: 100px;
+  font-family: $font-family-bebas-regular;
+  width: 60px;
+
+  span {
+    display: block;
+    line-height: 0.8;
+  }
+}
+
+.grid-info-component-text {
+  flex: 1;
+
+  &-title {
+    font-size: 35px;
+    margin-bottom: 40px;
+
+    span {
+      display: block;
+      font-family: $font-family-extrabold;
+      color: $green;
+    }
+  }
+
+  &-subtitle {
+    font-size: 21px;
+    color: $grey-medium-2;
+    margin-bottom: 0;
+  }
+}

@@ -1,8 +1,9 @@
 .footer {
-  margin-top: 30px;
+  margin-top: 160px;
   background-image: linear-gradient(to top, $grey-medium-2, $grey-medium-3);
   position: relative;
   font-size: 14px;
+  color: $grey-dark-6;
 
   &::before {
     content: "";
@@ -11,19 +12,17 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../images/waves.svg");
-    background-position: center;
+    background-image: url("../assets/images/neural.svg");
+    background-position: center -185px;
     background-repeat: no-repeat;
-    background-size: 100%;
-    opacity: 0.4;
+    background-size: 1920px 1061px;
   }
 
   &-inner {
     position: relative;
-    padding: 55px 0;
+    padding: 80px 0 30px;
 
-    &::before,
-    &::after {
+    &::before {
       content: "";
       width: 0;
       height: 0;
@@ -39,14 +38,8 @@
 
     &::before {
       top: 0;
-      border-top: 30px solid $body-bg;
-      border-top: 30px solid $body-bg;
-    }
-
-    &::after {
-      bottom: 0;
-      border-bottom: 30px solid $body-bg;
-      border-bottom: 30px solid $body-bg;
+      border-top: 30px solid $blue-main;
+      border-top: 30px solid $blue-main;
     }
   }
 
@@ -54,6 +47,7 @@
     display: flex;
     gap: 35px;
     justify-content: space-between;
+    margin-bottom: 80px;
 
     &-col-small {
       width: 32%;
@@ -96,7 +90,7 @@
   }
 
   &-form {
-    background-color: $yellow;
+    background-color: $grey-medium-2;
     border-radius: 5px;
     padding: 20px;
 
@@ -165,7 +159,6 @@
 
   &-address {
     margin: 0;
-    color: $blue-main;
 
     a {
       color: $blue-main;
@@ -195,6 +188,7 @@
   &-copy {
     margin: 0;
     padding-right: 10px;
+    font-size: 12px;
   }
 
   &-payment-logos {
@@ -272,11 +266,18 @@
     text-align: center;
 
     &-content {
-      display: block !important;
+      flex-direction: column;
+      align-items: flex-start !important;
+
+      .footer-payment-logos {
+        order: 0;
+      }
 
       .footer-copy {
         display: block;
         padding-right: 0;
+        order: 1;
+        margin-top: 15px;
       }
     }
   }

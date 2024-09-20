@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="LANDING_x5F_1">
+    <path class="cls-1" d="M25.5,16c-.09,0-.18-.02-.26-.07L.24.93C0,.79-.07.48.07.24.21,0,.52-.07.76.07l24.74,14.85L50.24.07c.24-.14.54-.07.69.17.14.24.07.54-.17.69l-25,15c-.08.05-.17.07-.26.07Z"/>
+  </g>
+</svg>
