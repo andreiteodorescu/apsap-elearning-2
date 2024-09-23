@@ -16,24 +16,24 @@ body {
 .container-xxxl {
   @include make-container();
 
-  @media (min-width: 1601px) {
-    max-width: 1600px;
+  @media (min-width: 1625px) {
+    max-width: 1624px;
   }
 }
 
 .container-narrow {
   @include make-container();
 
-  @media (min-width: 851px) {
-    max-width: 850px;
+  @media (min-width: 875px) {
+    max-width: 874px;
   }
 }
 
 .container-1000 {
   @include make-container();
 
-  @media (min-width: 1001px) {
-    max-width: 1000px;
+  @media (min-width: 1025px) {
+    max-width: 1024px;
   }
 }
 
@@ -50,5 +50,14 @@ body {
   &-offset {
     padding-top: 700px;
     margin-top: -600px;
+  }
+}
+
+.logo-icon {
+  width: 50px;
+  height: 65px;
+
+  &-green {
+    fill: $green;
   }
 }

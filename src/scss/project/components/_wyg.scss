@@ -9,6 +9,36 @@
       row-gap: 30px;
     }
   }
+
+  &-left {
+    .circle {
+      margin-left: 30px;
+    }
+  }
+
+  .yellow {
+    .circle,
+    .circle::before,
+    .circle::after {
+      background-color: $yellow;
+    }
+
+    .wyg-presentation-icon {
+      fill: $yellow;
+    }
+  }
+
+  .green {
+    .circle,
+    .circle::before,
+    .circle::after {
+      background-color: $green;
+    }
+
+    .wyg-presentation-icon {
+      fill: $green;
+    }
+  }
 }
 
 .circle {
@@ -37,18 +67,32 @@
 }
 
 /* Main circle animation */
-.wyg-component.observe .circle {
-  animation: circleIn 0.5s forwards, wave 2s 1.5s forwards;
-}
+.in-view {
+  .circle {
+    animation: circleIn 0.5s forwards, wave 2s 1.5s forwards;
+  }
 
-/* Left circle (::before) animation */
-.wyg-component.observe .circle::before {
-  animation: circleLeftIn 0.5s 0.5s forwards, waveLeft 2s 1.6s forwards;
-}
+  .circle::before {
+    animation: circleLeftIn 0.5s 0.5s forwards, waveLeft 2s 1.6s forwards;
+  }
 
-/* Right circle (::after) animation */
-.wyg-component.observe .circle::after {
-  animation: circleRightIn 0.5s 0.5s forwards, waveRight 2s 1.7s forwards;
+  .circle::after {
+    animation: circleRightIn 0.5s 0.5s forwards, waveRight 2s 1.7s forwards;
+  }
+
+  .no-wave {
+    &.circle {
+      animation: circleIn 0.5s forwards;
+    }
+
+    &.circle::before {
+      animation: circleLeftIn 0.5s 0.5s forwards;
+    }
+
+    &.circle::after {
+      animation: circleRightIn 0.5s 0.5s forwards;
+    }
+  }
 }
 
 .wyg-presentation {
@@ -60,6 +104,18 @@
     height: 50px;
     fill: #fff;
     margin-right: 42px;
+  }
+
+  &.grey {
+    .circle,
+    .circle::before,
+    .circle::after {
+      background-color: $grey-medium-2;
+    }
+
+    .wyg-presentation-icon {
+      fill: $grey-medium-2;
+    }
   }
 }
 
@@ -87,29 +143,5 @@
   @media (max-width: 540px) {
     width: auto;
     max-width: 320px;
-  }
-
-  &.yellow {
-    .circle,
-    .circle::before,
-    .circle::after {
-      background-color: $yellow;
-    }
-
-    .wyg-presentation-icon {
-      fill: $yellow;
-    }
-  }
-
-  &.green {
-    .circle,
-    .circle::before,
-    .circle::after {
-      background-color: $green;
-    }
-
-    .wyg-presentation-icon {
-      fill: $green;
-    }
   }
 }

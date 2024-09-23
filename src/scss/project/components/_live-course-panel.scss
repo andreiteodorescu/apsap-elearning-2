@@ -1,0 +1,36 @@
+.live-course-panel {
+  height: 90px;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 5px 0 5px 20px;
+
+  &-icon {
+    width: 51px;
+    height: 51px;
+    fill: #fff;
+  }
+
+  &-date {
+    text-align: center;
+    font-size: 18px;
+
+    &-title {
+      margin: 0;
+      color: $blue-zoom;
+      font-family: $font-family-bold;
+      font-size: inherit;
+    }
+
+    &-text {
+      display: block;
+      font-family: $font-family-light;
+    }
+  }
+}

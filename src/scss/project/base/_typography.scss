@@ -72,14 +72,17 @@ strong {
 }
 
 .main-title {
-  font-family: $font-family-base;
+  font-family: $font-family-extrabold;
   font-size: 48px;
   line-height: 1;
   margin-bottom: 45px;
 
   span {
-    display: block;
-    font-family: $font-family-extrabold;
+    font-family: $font-family-base;
+  }
+
+  &.yellow span {
+    color: #fff;
   }
 
   @include media-breakpoint-down(sm) {
@@ -89,4 +92,18 @@ strong {
 
 .medium-title {
   font-size: 32px;
+  font-family: $font-family-extrabold;
+  line-height: 1;
+
+  span {
+    font-family: $font-family-base;
+  }
+
+  &.yellow span {
+    color: #fff;
+  }
+
+  &.grey {
+    color: $grey-medium-2;
+  }
 }

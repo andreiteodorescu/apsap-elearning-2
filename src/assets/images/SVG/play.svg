@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.8 20.8">
+  <defs>
+    <style>
+      .cls-1 {
+        mask: url(#mask);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+    <mask id="mask" x="-.45" y="-.45" width="21.69" height="21.69" maskUnits="userSpaceOnUse">
+      <g id="custom">
+        <rect id="bg" class="cls-2" x="-.45" y="-.45" width="21.69" height="21.69"/>
+      </g>
+    </mask>
+  </defs>
+  <g id="COURSE_x5F_01">
+    <g id="cursul_tau_x5F_wide">
+      <g class="cls-1">
+        <g id="play_x5F_button">
+          <g id="g1827">
+            <g id="g1829">
+              <g id="g1831">
+                <g id="g1837">
+                  <path class="cls-2" d="M10.4,20.8C4.67,20.8,0,16.13,0,10.4S4.67,0,10.4,0s10.4,4.67,10.4,10.4c0,2.05-.61,4.05-1.76,5.77-.12.18-.37.23-.55.11-.18-.12-.23-.37-.11-.55,1.06-1.59,1.63-3.44,1.63-5.33C20,5.11,15.69.8,10.4.8S.8,5.11.8,10.4s4.31,9.6,9.6,9.6c1.76,0,3.47-.48,4.97-1.38.19-.11.43-.05.55.13.11.19.05.43-.14.55-1.62.98-3.48,1.5-5.38,1.5Z"/>
+                </g>
+                <g id="g1841">
+                  <path id="path1843" class="cls-2" d="M9.07,14.1l4.78-2.77c.71-.41.71-1.44,0-1.85l-4.78-2.77c-.71-.41-1.59.1-1.59.92v5.55c0,.82.89,1.33,1.59.92Z"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

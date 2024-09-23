@@ -6,7 +6,7 @@
 
 .btn-pill {
   border: none;
-  background-color: $grey-extralight-2;
+  background-color: $grey-medium-3;
   color: $blue-main;
   text-transform: uppercase;
   padding-top: 15px;
@@ -29,10 +29,6 @@
   &:focus-visible {
     background-color: $grey-hover !important;
     color: $blue-main !important;
-  }
-
-  &-radius {
-    border-radius: 4px;
   }
 
   &-shadow {
@@ -89,11 +85,11 @@
 
   &-small {
     min-width: 220px;
-    font-size: 14px;
+    font-size: 16px;
     padding-top: 10px;
     padding-bottom: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     font-family: $font-family-bold;
 
     span {
@@ -143,5 +139,20 @@
   &-down {
     top: auto;
     bottom: -21px;
+  }
+}
+
+.btn-zoom {
+  background-color: rgba(171, 171, 171, 0.4);
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 20px;
+  font-family: $font-family-bold;
+
+  &:active,
+  &:hover,
+  &:first-child:active,
+  &:focus-visible {
+    background-color: $blue-zoom !important;
+    color: #fff !important;
   }
 }
