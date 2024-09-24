@@ -1,0 +1,53 @@
+.progress-wrapper {
+  color: $green;
+  margin-bottom: 35px;
+}
+
+.progress-icon {
+  fill: $green;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.progress-title {
+  font-size: 32px;
+  font-family: $font-family-extrabold;
+  margin: 0;
+}
+
+.progress-subtitle {
+  font-family: $font-family-light;
+  margin: 0;
+}
+
+.progress {
+  background-color: $grey-medium-2;
+  height: 1px;
+  overflow: visible;
+  margin-top: 23px;
+}
+
+.progress-bar {
+  background-color: $green;
+  overflow: visible;
+  position: relative;
+}
+
+.progress-bubble {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: $green;
+  position: absolute;
+  right: -21px;
+  top: -21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 2px rgba(94, 180, 97, 0.8);
+  color: $blue-main;
+  font-size: 14px;
+  font-family: $font-family-bold;
+  line-height: 1;
+}

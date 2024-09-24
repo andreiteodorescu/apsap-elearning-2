@@ -81,6 +81,7 @@ function scripts() {
 // Serve and watch for changes
 function serve() {
   browserSync.init({
+    port: 8000,
     server: {
       baseDir: "./src",
     },

@@ -33,8 +33,32 @@
 
 .yellow {
   color: $yellow;
+
+  .circle,
+  .circle::before,
+  .circle::after {
+    background-color: $yellow;
+  }
+
+  &.circle,
+  &.circle::before,
+  &.circle::after {
+    background-color: $yellow;
+  }
 }
 
 .green {
   color: $green;
+
+  .circle,
+  .circle::before,
+  .circle::after {
+    background-color: $green;
+  }
+
+  &.circle,
+  &.circle::before,
+  &.circle::after {
+    background-color: $green;
+  }
 }

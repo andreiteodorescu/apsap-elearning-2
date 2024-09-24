@@ -17,24 +17,12 @@
   }
 
   .yellow {
-    .circle,
-    .circle::before,
-    .circle::after {
-      background-color: $yellow;
-    }
-
     .wyg-presentation-icon {
       fill: $yellow;
     }
   }
 
   .green {
-    .circle,
-    .circle::before,
-    .circle::after {
-      background-color: $green;
-    }
-
     .wyg-presentation-icon {
       fill: $green;
     }
@@ -50,6 +38,10 @@
   opacity: 0;
   transform: translateY(20px);
   position: relative;
+
+  &-left {
+    margin-left: 30px;
+  }
 }
 
 /* Pseudo-elements for additional circles */
