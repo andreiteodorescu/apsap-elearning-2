@@ -14010,11 +14010,33 @@ strong {
   height: 44px;
   margin-bottom: 20px;
 }
+.course-details-icon.green {
+  fill: #5eb461;
+}
 
 .course-details-columns {
-  columns: 48% 2;
+  columns: 2;
   column-fill: balance;
-  column-gap: 3%;
+  column-gap: 15px;
+  font-size: 12px;
+  font-family: "RubrikEdgeNew-Light", Tahoma, Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+.course-details-columns > div,
+.course-details-columns > p {
+  margin-bottom: 16px;
+}
+.course-details-columns > div p {
+  margin: 0;
+}
+
+.course-details-more {
+  font-family: "RubrikEdgeNew-Extrabold", Tahoma, Arial, Helvetica, sans-serif;
+  color: inherit;
+  text-decoration: none;
+}
+.course-details-more:hover {
+  text-decoration: underline;
 }
 
 .social-media p {
