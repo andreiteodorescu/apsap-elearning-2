@@ -1,5 +1,5 @@
 .live-course-panel {
-  height: 90px;
+  min-height: 90px;
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 0.1),
@@ -10,6 +10,25 @@
   align-items: center;
   gap: 18px;
   padding: 5px 0 5px 20px;
+  margin-bottom: 70px;
+
+  @include media-breakpoint-down(xl) {
+    justify-content: center;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 48px;
+    flex-direction: column;
+    padding: 20px 10px;
+
+    .countdown {
+      order: 1;
+    }
+
+    .btn {
+      order: 2;
+    }
+  }
 
   &-icon {
     width: 51px;
@@ -20,6 +39,10 @@
   &-date {
     text-align: center;
     font-size: 18px;
+
+    @include media-breakpoint-down(sm) {
+      order: 3;
+    }
 
     &-title {
       margin: 0;

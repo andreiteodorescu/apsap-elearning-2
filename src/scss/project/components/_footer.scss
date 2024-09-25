@@ -16,6 +16,11 @@
     background-position: center -185px;
     background-repeat: no-repeat;
     background-size: 1920px 1061px;
+
+    @include media-breakpoint-down(md) {
+      background-position: center -90px;
+      background-size: 1260px 830px;
+    }
   }
 
   &-inner {
