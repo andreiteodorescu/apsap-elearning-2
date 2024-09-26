@@ -215,6 +215,17 @@ $(window).on("scroll", function () {
 });
 "use strict";
 
+$(".course-modules-list-item").click(function () {
+  // Check if the clicked item has the 'active' class
+  if ($(this).hasClass("active")) {
+    // Animate the scroll to the target element
+    $("html, body").animate({
+      scrollTop: $("#courseVideo").offset().top - 110
+    }, 1000);
+  }
+});
+"use strict";
+
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 // https://github.com/faisalman/ua-parser-js
 !function (i, e) {

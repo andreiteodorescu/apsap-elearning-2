@@ -1,0 +1,27 @@
+.modal-content {
+  color: $blue-main;
+}
+
+.modal-header {
+  flex-direction: column;
+  padding-right: 35px;
+  align-items: start;
+}
+
+.custom-modal-close,
+.modal-header .btn-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+}
+
+.docs-modal-title {
+  margin: 0 0 5px;
+}
+
+.docs-modal-subtitle {
+  font-size: 14px;
+}

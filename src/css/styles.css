@@ -93,11 +93,11 @@
   --bs-tertiary-bg: #f8f9fa;
   --bs-tertiary-bg-rgb: 248, 249, 250;
   --bs-heading-color: inherit;
-  --bs-link-color: #003e66;
-  --bs-link-color-rgb: 0, 62, 102;
+  --bs-link-color: #fff;
+  --bs-link-color-rgb: 255, 255, 255;
   --bs-link-decoration: underline;
-  --bs-link-hover-color: #003252;
-  --bs-link-hover-color-rgb: 0, 50, 82;
+  --bs-link-hover-color: #cccccc;
+  --bs-link-hover-color-rgb: 204, 204, 204;
   --bs-code-color: #d63384;
   --bs-highlight-color: #212529;
   --bs-highlight-bg: #fef2d0;
@@ -3432,7 +3432,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #6c757d;
   --bs-btn-disabled-border-color: transparent;
   --bs-btn-box-shadow: 0 0 0 #000;
-  --bs-btn-focus-shadow-rgb: 38, 91, 125;
+  --bs-btn-focus-shadow-rgb: 217, 217, 217;
   text-decoration: underline;
 }
 .btn-link:focus-visible {
@@ -13065,6 +13065,66 @@ body.course-page {
   fill: #5eb461;
 }
 
+.main-content {
+  padding-top: 50px;
+  padding-bottom: 300px;
+}
+@media (max-width: 991.98px) {
+  .main-content {
+    padding-bottom: 0;
+  }
+}
+.main-content-header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 55px;
+}
+.main-content-header-icon {
+  width: 65px;
+  margin-top: 4px;
+}
+.main-content-header-icon svg {
+  width: 51px;
+  height: 51px;
+  fill: #5eb461;
+}
+.main-content-header-headings {
+  flex: 1;
+}
+.main-content-header-headings-title {
+  font-size: 32px;
+  font-family: "BebasNeue-Regular", Tahoma, Arial, Helvetica, sans-serif;
+  margin: 0;
+  line-height: 1;
+}
+.main-content-header-text {
+  flex-basis: 100%;
+  padding-top: 20px;
+  font-size: 18px;
+  font-family: "RubrikEdgeNew-Light", Tahoma, Arial, Helvetica, sans-serif;
+  color: #7a7a7a;
+}
+.main-content-header-text a {
+  color: #7a7a7a;
+  text-decoration: none;
+}
+.main-content-header-text a:hover {
+  text-decoration: underline;
+}
+
+.generic-text {
+  font-size: 18px;
+  font-family: "RubrikEdgeNew-Light", Tahoma, Arial, Helvetica, sans-serif;
+  color: #7a7a7a;
+}
+.generic-text a {
+  color: #7a7a7a;
+  text-decoration: none;
+}
+.generic-text a:hover {
+  text-decoration: underline;
+}
+
 @font-face {
   font-family: "RubrikEdgeNew-Bold";
   src: url("../assets/fonts/rubrikedgenew-bold-webfont.woff2") format("woff2"), url("../assets/fonts/rubrikedgenew-bold-webfont.woff") format("woff");
@@ -13096,13 +13156,6 @@ body.course-page {
 @font-face {
   font-family: "RubrikEdgeNew-Regular";
   src: url("../assets/fonts/rubrikedgenew-regular-webfont.woff2") format("woff2"), url("../assets/fonts/rubrikedgenew-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "RubrikEdgeNew-RegularItalic";
-  src: url("../assets/fonts/rubrikedgenew-regularitalic-webfont.woff2") format("woff2"), url("../assets/fonts/rubrikedgenew-regularitalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -13202,6 +13255,9 @@ strong {
   .btn-pill-long {
     width: 95%;
   }
+}
+.btn-pill-full {
+  width: 100%;
 }
 .btn-pill-green {
   background-color: #5eb461;
@@ -13466,6 +13522,13 @@ strong {
   width: 152px;
 }
 
+.active-menu-logo {
+  display: none;
+  width: 32px;
+  height: 42px;
+  fill: #fff;
+}
+
 .main-submenu {
   background-color: #101228;
   background-image: url("../assets/images/diamond.png");
@@ -13650,6 +13713,15 @@ strong {
 }
 .nav-active .header {
   overflow: initial;
+}
+.nav-active .active-menu-logo {
+  display: block;
+  position: absolute;
+  z-index: 1001;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 35px;
 }
 .nav-active .menu {
   color: #fff;
@@ -14580,6 +14652,125 @@ strong {
   font-size: 14px;
   font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
   line-height: 1;
+}
+
+.upload-docs-btn {
+  border: none;
+  background-color: rgba(210, 210, 210, 0.55);
+  background-image: url("../assets/images/upload.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) 10px;
+  background-size: 25px 25px;
+  border-radius: 4px;
+  min-height: 63px;
+  padding: 5px 45px 5px 15px;
+  font-size: 18px;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+  text-align: left;
+  width: 100%;
+  color: #101228;
+  transition: all 0.3s ease-in-out;
+  line-height: 1;
+  height: 100%;
+}
+.upload-docs-btn span {
+  display: block;
+  font-size: 12px;
+  font-family: "RubrikEdgeNew-Regular", Tahoma, Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  margin-top: 3px;
+}
+.upload-docs-btn:hover {
+  background-color: rgba(210, 210, 210, 0.6);
+}
+.upload-docs-btn.uploaded {
+  background-color: rgba(249, 190, 19, 0.79);
+  background-image: url("../assets/images/done.svg");
+}
+.upload-docs-btn.uploaded:hover {
+  background-color: rgba(249, 190, 19, 0.85);
+}
+
+.custom-file {
+  margin-bottom: 10px;
+  /* Style the label */
+}
+.custom-file input[type=file] {
+  display: none;
+}
+.custom-file .custom-file-upload {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #f9be13;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  min-width: 200px;
+}
+.custom-file .custom-file-upload span {
+  background-image: url("../assets/images/upload.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding-left: 30px;
+  display: inline-block;
+  min-height: 20px;
+}
+.custom-file .custom-file-upload:hover {
+  background-color: #f7c750;
+}
+
+.no-file {
+  display: block;
+  font-size: 14px;
+  color: #333232;
+  margin-bottom: 25px;
+}
+
+.degree-select {
+  width: 100%;
+}
+
+.modal-content {
+  color: #101228;
+}
+
+.modal-header {
+  flex-direction: column;
+  padding-right: 35px;
+  align-items: start;
+}
+
+.custom-modal-close,
+.modal-header .btn-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+}
+
+.docs-modal-title {
+  margin: 0 0 5px;
+}
+
+.docs-modal-subtitle {
+  font-size: 14px;
+}
+
+.form-field-wrap {
+  background-color: #a2a2ab;
+  border-radius: 4px;
+  min-height: 63px;
+  padding: 10px 15px;
+  text-align: left;
+  width: 100%;
+  color: #101228;
+  transition: all 0.3s ease-in-out;
+  line-height: 1;
+  height: 100%;
 }
 
 .footer {

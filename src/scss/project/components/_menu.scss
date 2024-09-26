@@ -30,6 +30,13 @@
   width: 152px;
 }
 
+.active-menu-logo {
+  display: none;
+  width: 32px;
+  height: 42px;
+  fill: #fff;
+}
+
 .main-submenu {
   background-color: $blue-main;
   background-image: url("../assets/images/diamond.png");
@@ -256,6 +263,16 @@
 
   .header {
     overflow: initial;
+  }
+
+  .active-menu-logo {
+    display: block;
+    position: absolute;
+    z-index: 1001;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 35px;
   }
 
   .menu {

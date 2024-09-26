@@ -112,3 +112,72 @@ body {
     fill: $green;
   }
 }
+
+.main-content {
+  padding-top: 50px;
+  padding-bottom: 300px;
+
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 0;
+  }
+
+  &-header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 55px;
+
+    &-icon {
+      width: 65px;
+      margin-top: 4px;
+
+      svg {
+        width: 51px;
+        height: 51px;
+        fill: $green;
+      }
+    }
+
+    &-headings {
+      flex: 1;
+
+      &-title {
+        font-size: 32px;
+        font-family: $font-family-bebas-regular;
+        margin: 0;
+        line-height: 1;
+      }
+    }
+
+    &-text {
+      flex-basis: 100%;
+      padding-top: 20px;
+      font-size: 18px;
+      font-family: $font-family-light;
+      color: $grey-medium-4;
+
+      a {
+        color: $grey-medium-4;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.generic-text {
+  font-size: 18px;
+  font-family: $font-family-light;
+  color: $grey-medium-4;
+
+  a {
+    color: $grey-medium-4;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
