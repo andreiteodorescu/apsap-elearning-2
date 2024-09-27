@@ -13125,6 +13125,15 @@ body.course-page {
   text-decoration: underline;
 }
 
+@media (max-width: 420px) {
+  .gap-xs-custom {
+    gap: 16px;
+  }
+  .col-xs-custom {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
 @font-face {
   font-family: "RubrikEdgeNew-Bold";
   src: url("../assets/fonts/rubrikedgenew-bold-webfont.woff2") format("woff2"), url("../assets/fonts/rubrikedgenew-bold-webfont.woff") format("woff");
@@ -14764,13 +14773,91 @@ strong {
   background-color: #a2a2ab;
   border-radius: 4px;
   min-height: 63px;
-  padding: 10px 15px;
+  padding: 10px 15px 4px;
   text-align: left;
   width: 100%;
   color: #101228;
   transition: all 0.3s ease-in-out;
   line-height: 1;
   height: 100%;
+}
+.form-field-wrap .form-label {
+  font-size: 11px;
+  margin-bottom: 0;
+  display: block;
+  text-transform: uppercase;
+  font-family: "RubrikEdgeNew-Medium", Tahoma, Arial, Helvetica, sans-serif;
+}
+.form-field-wrap .form-control {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 18px;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+  padding: 3px 0;
+  text-transform: uppercase;
+}
+.form-field-wrap .form-check-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.form-field-wrap .form-check-input {
+  margin-top: 0;
+}
+.form-field-wrap .form-check-label {
+  font-size: 18px;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+}
+.form-field-wrap .form-select {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  font-size: 18px;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+  padding-left: 0;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-position: right 0.2rem center;
+  background-size: 20px 17px;
+}
+.form-field-wrap .form-select:focus {
+  box-shadow: none;
+}
+
+.keyboard-title {
+  font-size: 32px;
+  font-family: "BebasNeue-Regular", Tahoma, Arial, Helvetica, sans-serif;
+  color: #ababab;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.keyboard-title span {
+  display: block;
+}
+
+.keyboard-list {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  max-width: 690px;
+}
+.keyboard-list-item button {
+  border: none;
+  background: linear-gradient(to bottom, rgb(135, 136, 146), rgb(83, 84, 96));
+  width: 45px;
+  height: 45px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+  transition: all 0.2s ease-out;
+}
+.keyboard-list-item button:hover {
+  background: linear-gradient(to bottom, rgb(155, 156, 166), rgb(103, 104, 116));
+  transform: scale(1.04);
 }
 
 .footer {

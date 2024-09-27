@@ -181,3 +181,13 @@ body {
     }
   }
 }
+
+@media (max-width: 420px) {
+  .gap-xs-custom {
+    gap: 16px;
+  }
+  .col-xs-custom {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
