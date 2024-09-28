@@ -180,6 +180,22 @@ body {
       text-decoration: underline;
     }
   }
+
+  strong {
+    font-family: $font-family-medium;
+  }
+
+  &-plus {
+    font-size: 21px;
+
+    strong {
+      font-family: $font-family-bold;
+    }
+  }
+
+  .white {
+    color: #fff;
+  }
 }
 
 @media (max-width: 420px) {

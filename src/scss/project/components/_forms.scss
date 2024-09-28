@@ -2,7 +2,7 @@
   background-color: $grey-medium-5;
   border-radius: 4px;
   min-height: 63px;
-  padding: 10px 15px 4px;
+  padding: 15px 15px 3px;
   text-align: left;
   width: 100%;
   color: $blue-main;
@@ -58,6 +58,37 @@
 
     &:focus {
       box-shadow: none;
+    }
+  }
+}
+
+.form-locked {
+  .form-field-wrap {
+    background-color: rgba(162, 162, 171, 0.3);
+    color: $green;
+
+    .form-check-input {
+      display: none;
+    }
+
+    .form-check-inline {
+      padding-left: 0;
+      margin-right: 0;
+    }
+
+    input,
+    .form-check-label,
+    .form-label {
+      pointer-events: none;
+    }
+
+    .form-label {
+      color: #fff;
+    }
+
+    .form-control,
+    .form-select {
+      color: $green;
     }
   }
 }

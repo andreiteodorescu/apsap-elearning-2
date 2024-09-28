@@ -13124,6 +13124,18 @@ body.course-page {
 .generic-text a:hover {
   text-decoration: underline;
 }
+.generic-text strong {
+  font-family: "RubrikEdgeNew-Medium", Tahoma, Arial, Helvetica, sans-serif;
+}
+.generic-text-plus {
+  font-size: 21px;
+}
+.generic-text-plus strong {
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+}
+.generic-text .white {
+  color: #fff;
+}
 
 @media (max-width: 420px) {
   .gap-xs-custom {
@@ -13229,7 +13241,7 @@ strong {
 
 .btn-pill {
   border: none;
-  background-color: #d2d2d2;
+  background-color: #ababab;
   color: #101228;
   text-transform: uppercase;
   padding-top: 15px;
@@ -13499,6 +13511,10 @@ strong {
 }
 .green.circle, .green.circle::before, .green.circle::after {
   background-color: #5eb461;
+}
+
+.grey {
+  color: #ababab;
 }
 
 .header {
@@ -14773,7 +14789,7 @@ strong {
   background-color: #a2a2ab;
   border-radius: 4px;
   min-height: 63px;
-  padding: 10px 15px 4px;
+  padding: 15px 15px 3px;
   text-align: left;
   width: 100%;
   color: #101228;
@@ -14826,6 +14842,30 @@ strong {
   box-shadow: none;
 }
 
+.form-locked .form-field-wrap {
+  background-color: rgba(162, 162, 171, 0.3);
+  color: #5eb461;
+}
+.form-locked .form-field-wrap .form-check-input {
+  display: none;
+}
+.form-locked .form-field-wrap .form-check-inline {
+  padding-left: 0;
+  margin-right: 0;
+}
+.form-locked .form-field-wrap input,
+.form-locked .form-field-wrap .form-check-label,
+.form-locked .form-field-wrap .form-label {
+  pointer-events: none;
+}
+.form-locked .form-field-wrap .form-label {
+  color: #fff;
+}
+.form-locked .form-field-wrap .form-control,
+.form-locked .form-field-wrap .form-select {
+  color: #5eb461;
+}
+
 .keyboard-title {
   font-size: 32px;
   font-family: "BebasNeue-Regular", Tahoma, Arial, Helvetica, sans-serif;
@@ -14858,6 +14898,112 @@ strong {
 .keyboard-list-item button:hover {
   background: linear-gradient(to bottom, rgb(155, 156, 166), rgb(103, 104, 116));
   transform: scale(1.04);
+}
+
+.certicate-edit {
+  position: relative;
+}
+.certicate-edit-text {
+  position: absolute;
+  font-size: 13px;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+  color: #000;
+  text-transform: uppercase;
+}
+@media (max-width: 767.98px) {
+  .certicate-edit-text {
+    font-size: 10px;
+  }
+}
+@media (max-width: 575.98px) {
+  .certicate-edit-text {
+    font-size: 8px;
+  }
+}
+@media (max-width: 450px) {
+  .certicate-edit-text {
+    font-size: 5px;
+  }
+}
+.certicate-edit-name {
+  left: 355px;
+  top: 219px;
+}
+@media (max-width: 900px) {
+  .certicate-edit-name {
+    left: 42%;
+    top: 36.5%;
+  }
+}
+.certicate-edit-year {
+  left: 635px;
+  top: 235px;
+}
+@media (max-width: 900px) {
+  .certicate-edit-year {
+    left: 75%;
+    top: 39.5%;
+  }
+}
+.certicate-edit-month {
+  left: 710px;
+  top: 235px;
+}
+@media (max-width: 900px) {
+  .certicate-edit-month {
+    left: 83%;
+    top: 39.5%;
+  }
+}
+.certicate-edit-day {
+  left: 777px;
+  top: 235px;
+}
+@media (max-width: 900px) {
+  .certicate-edit-day {
+    left: 92%;
+    top: 39.5%;
+  }
+}
+.certicate-edit-city {
+  left: 375px;
+  top: 250px;
+}
+@media (max-width: 900px) {
+  .certicate-edit-city {
+    left: 44%;
+    top: 42%;
+  }
+}
+.certicate-edit-county {
+  left: 635px;
+  top: 250px;
+}
+@media (max-width: 900px) {
+  .certicate-edit-county {
+    left: 75%;
+    top: 42%;
+  }
+}
+.certicate-edit-father {
+  left: 360px;
+  top: 267px;
+}
+@media (max-width: 900px) {
+  .certicate-edit-father {
+    left: 43%;
+    top: 45%;
+  }
+}
+.certicate-edit-mother {
+  left: 570px;
+  top: 267px;
+}
+@media (max-width: 900px) {
+  .certicate-edit-mother {
+    left: 67%;
+    top: 45%;
+  }
 }
 
 .footer {

@@ -1,0 +1,103 @@
+.certicate-edit {
+  position: relative;
+
+  &-text {
+    position: absolute;
+    font-size: 13px;
+    font-family: $font-family-bold;
+    color: #000;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(md) {
+      font-size: 10px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 8px;
+    }
+
+    @media (max-width: 450px) {
+      font-size: 5px;
+    }
+  }
+
+  &-name {
+    left: 355px;
+    top: 219px;
+
+    @media (max-width: 900px) {
+      left: 42%;
+      top: 36.5%;
+    }
+  }
+
+  &-year {
+    left: 635px;
+    top: 235px;
+
+    @media (max-width: 900px) {
+      left: 75%;
+      top: 39.5%;
+    }
+  }
+
+  &-month {
+    left: 710px;
+    top: 235px;
+
+    @media (max-width: 900px) {
+      left: 83%;
+      top: 39.5%;
+    }
+  }
+
+  &-day {
+    left: 777px;
+    top: 235px;
+
+    @media (max-width: 900px) {
+      left: 92%;
+      top: 39.5%;
+    }
+  }
+
+  &-city {
+    left: 375px;
+    top: 250px;
+
+    @media (max-width: 900px) {
+      left: 44%;
+      top: 42%;
+    }
+  }
+
+  &-county {
+    left: 635px;
+    top: 250px;
+
+    @media (max-width: 900px) {
+      left: 75%;
+      top: 42%;
+    }
+  }
+
+  &-father {
+    left: 360px;
+    top: 267px;
+
+    @media (max-width: 900px) {
+      left: 43%;
+      top: 45%;
+    }
+  }
+
+  &-mother {
+    left: 570px;
+    top: 267px;
+
+    @media (max-width: 900px) {
+      left: 67%;
+      top: 45%;
+    }
+  }
+}
