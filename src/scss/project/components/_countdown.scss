@@ -21,4 +21,12 @@
   .min {
     position: relative;
   }
+
+  &-left-auto {
+    margin-left: auto;
+
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+    }
+  }
 }

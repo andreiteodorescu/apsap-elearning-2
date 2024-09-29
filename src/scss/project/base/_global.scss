@@ -146,6 +146,11 @@ body {
         margin: 0;
         line-height: 1;
       }
+
+      &-subtitle {
+        font-size: 18px;
+        font-family: $font-family-bold;
+      }
     }
 
     &-text {

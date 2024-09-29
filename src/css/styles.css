@@ -13097,6 +13097,10 @@ body.course-page {
   margin: 0;
   line-height: 1;
 }
+.main-content-header-headings-subtitle {
+  font-size: 18px;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+}
 .main-content-header-text {
   flex-basis: 100%;
   padding-top: 20px;
@@ -13366,6 +13370,13 @@ strong {
   background-color: #1f71b8 !important;
   color: #fff !important;
 }
+.btn-zoom-blue {
+  background-color: #1f71b8;
+  color: #fff;
+}
+.btn-zoom-blue:active, .btn-zoom-blue:hover, .btn-zoom-blue:first-child:active, .btn-zoom-blue:focus-visible {
+  background-color: #2886d7 !important;
+}
 
 .form-control {
   border-radius: 5px;
@@ -13515,6 +13526,13 @@ strong {
 
 .grey {
   color: #ababab;
+}
+
+.blue {
+  color: #1f71b8;
+}
+.blue a {
+  color: #1f71b8;
 }
 
 .header {
@@ -14566,6 +14584,14 @@ strong {
 .countdown .min {
   position: relative;
 }
+.countdown-left-auto {
+  margin-left: auto;
+}
+@media (max-width: 575.98px) {
+  .countdown-left-auto {
+    margin-left: 0;
+  }
+}
 
 .live-course-panel {
   min-height: 90px;
@@ -14617,6 +14643,20 @@ strong {
 }
 .live-course-panel-date-text {
   display: block;
+  font-family: "RubrikEdgeNew-Light", Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.zoom-tutorial {
+  text-decoration: none;
+}
+.zoom-tutorial:hover {
+  text-decoration: underline;
+}
+.zoom-tutorial p {
+  font-size: 18px;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+}
+.zoom-tutorial p span {
   font-family: "RubrikEdgeNew-Light", Tahoma, Arial, Helvetica, sans-serif;
 }
 

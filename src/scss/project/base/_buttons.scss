@@ -163,4 +163,16 @@
     background-color: $blue-zoom !important;
     color: #fff !important;
   }
+
+  &-blue {
+    background-color: $blue-zoom;
+    color: #fff;
+
+    &:active,
+    &:hover,
+    &:first-child:active,
+    &:focus-visible {
+      background-color: #2886d7 !important;
+    }
+  }
 }

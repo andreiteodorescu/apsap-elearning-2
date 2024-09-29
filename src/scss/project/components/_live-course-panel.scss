@@ -57,3 +57,20 @@
     }
   }
 }
+
+.zoom-tutorial {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    font-size: 18px;
+    font-family: $font-family-bold;
+
+    span {
+      font-family: $font-family-light;
+    }
+  }
+}
