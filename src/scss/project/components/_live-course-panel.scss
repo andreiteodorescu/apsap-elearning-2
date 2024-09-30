@@ -59,11 +59,7 @@
 }
 
 .zoom-tutorial {
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
+  display: flex;
 
   p {
     font-size: 18px;
@@ -72,5 +68,14 @@
     span {
       font-family: $font-family-light;
     }
+  }
+}
+
+a.zoom-tutorial {
+  display: inline-flex;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
   }
 }

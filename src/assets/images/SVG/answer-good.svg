@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #5eb461;
+      }
+    </style>
+  </defs>
+  <g id="QUIZ">
+    <g id="YES">
+      <path class="cls-1" d="M22.5,0C10.14,0,0,10.14,0,22.5s10.14,22.5,22.5,22.5,22.5-10.14,22.5-22.5S34.86,0,22.5,0ZM19.78,32.73l-9.85-9.85,3.73-3.73,6.3,6.3,12.64-11.49,3.55,3.9-16.36,14.88Z"/>
+    </g>
+  </g>
+</svg>

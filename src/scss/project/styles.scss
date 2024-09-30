@@ -51,7 +51,6 @@ For PUL: If you need to reduce the stylesheet file size delete de above lines an
 @import "components/course";
 @import "components/social-media";
 // @import "components/swiper";
-// @import "components/card-full-image";
 @import "components/hero";
 @import "components/faq";
 @import "components/wyg";
@@ -64,21 +63,10 @@ For PUL: If you need to reduce the stylesheet file size delete de above lines an
 @import "components/forms";
 @import "components/keyboard";
 @import "components/certificate-editable";
-// @import "components/card-info";
-// @import "components/info-console-grid";
-// @import "components/huge-heading";
-// @import "components/ribbon";
-// @import "components/description-sections";
-// @import "components/medallion";
-// @import "components/months";
-// @import "components/reviews";
-
-// @import "components/certification";
-// @import "components/grid-list-text";
-// @import "components/footnotes";
-// @import "components/info-tech";
-// @import "components/hotels";
-// @import "components/lecturers";
+@import "components/bills-list";
+@import "components/quiz";
+@import "components/upload-assessment";
+@import "components/exam-date-tabs";
 // @import "components/search-results";
 // @import "components/contact-form";
 // @import "components/reservation-success";

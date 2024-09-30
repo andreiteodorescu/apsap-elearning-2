@@ -88,6 +88,22 @@ strong {
   @include media-breakpoint-down(md) {
     font-size: 36px;
   }
+
+  &-medium {
+    font-size: 29px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 29px;
+    }
+  }
+
+  &-small {
+    font-size: 21px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 21px;
+    }
+  }
 }
 
 .medium-title {
@@ -114,4 +130,16 @@ strong {
   &.grey {
     color: $grey-medium-2;
   }
+
+  &-small {
+    font-size: 19px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 19px;
+    }
+  }
+}
+
+.subtitle-text-medium {
+  font-size: 10px;
 }

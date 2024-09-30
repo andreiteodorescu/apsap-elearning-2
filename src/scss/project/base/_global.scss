@@ -45,6 +45,14 @@ body {
   }
 }
 
+.container-xl-custom {
+  @include make-container();
+
+  @media (min-width: 1165px) {
+    max-width: 1164px;
+  }
+}
+
 .component-block {
   margin-top: 90px;
 }
@@ -135,6 +143,14 @@ body {
         height: 51px;
         fill: $green;
       }
+
+      &.yellow svg {
+        fill: $yellow;
+      }
+
+      &.grey svg {
+        fill: $grey-medium-2;
+      }
     }
 
     &-headings {
@@ -149,7 +165,13 @@ body {
 
       &-subtitle {
         font-size: 18px;
-        font-family: $font-family-bold;
+      }
+
+      &-quiz {
+        font-size: 30px;
+        line-height: 1;
+        position: relative;
+        top: -1px;
       }
     }
 
@@ -159,6 +181,14 @@ body {
       font-size: 18px;
       font-family: $font-family-light;
       color: $grey-medium-4;
+
+      &-big {
+        font-size: 21px;
+      }
+
+      &.white {
+        color: #fff;
+      }
 
       a {
         color: $grey-medium-4;

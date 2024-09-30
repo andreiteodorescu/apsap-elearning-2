@@ -1,0 +1,101 @@
+.upload-assessment {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  border-radius: 7px;
+  padding: 40px;
+  margin-bottom: 90px;
+
+  @include media-breakpoint-down(md) {
+    padding: 20px;
+    margin-bottom: 45px;
+  }
+
+  &-logos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 420px) {
+      gap: 10px;
+    }
+
+    @media (max-width: 360px) {
+      gap: 5px;
+    }
+  }
+
+  &-trigger {
+    height: 100%;
+    font-size: 18px;
+    color: $blue-main;
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+      height: 200px;
+      margin-bottom: 30px;
+    }
+
+    &-label {
+      background-color: rgba(210, 210, 210, 0.55);
+      border-radius: 7px;
+      border: 1px dashed #000;
+      background-image: url(../assets/images/upload.svg);
+      background-repeat: no-repeat;
+      background-position: calc(100% - 15px) 20px;
+      background-size: 50px 50px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      cursor: pointer;
+      padding: 20px 80px 20px 15px;
+      display: block;
+      transition: background-color 0.3s ease-in-out;
+
+      &:hover {
+        background-color: rgba(210, 210, 210, 0.65);
+      }
+    }
+
+    &-title {
+      font-size: 18px;
+      font-family: $font-family-extrabold;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      line-height: 1.3;
+      display: block;
+    }
+
+    &-input {
+      display: none;
+    }
+  }
+}
+
+.upload-assessment-warning {
+  color: $grey-medium-2;
+
+  &-title {
+    font-size: 21px;
+    font-family: $font-family-extrabold;
+    margin: 0 0 5px;
+    text-transform: uppercase;
+  }
+
+  &-text {
+    font-size: 18px;
+    margin: 0;
+  }
+}
