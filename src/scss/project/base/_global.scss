@@ -151,6 +151,10 @@ body {
       &.grey svg {
         fill: $grey-medium-2;
       }
+
+      &.white svg {
+        fill: #fff;
+      }
     }
 
     &-headings {

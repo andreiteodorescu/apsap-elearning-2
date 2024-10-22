@@ -13109,6 +13109,9 @@ body.course-page {
 .main-content-header-icon.grey svg {
   fill: #ababab;
 }
+.main-content-header-icon.white svg {
+  fill: #fff;
+}
 .main-content-header-headings {
   flex: 1;
 }
@@ -13593,6 +13596,13 @@ strong {
 }
 .blue a {
   color: #1f71b8;
+}
+
+.white {
+  color: #fff;
+}
+.white a {
+  color: #fff;
 }
 
 .header {
@@ -15402,8 +15412,25 @@ a.zoom-tutorial:hover {
   gap: 3px;
   border: none;
 }
+@media (max-width: 991.98px) {
+  .exam-date .nav-tabs {
+    flex-wrap: wrap;
+  }
+}
 .exam-date .nav-tabs .nav-item {
   flex: 1;
+}
+@media (max-width: 991.98px) {
+  .exam-date .nav-tabs .nav-item {
+    flex-basis: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 440px) {
+  .exam-date .nav-tabs .nav-item {
+    flex-basis: 180px;
+  }
 }
 .exam-date .nav-tabs .nav-link {
   border: none;
@@ -15423,6 +15450,12 @@ a.zoom-tutorial:hover {
   min-height: 230px;
   position: relative;
 }
+@media (max-width: 767.98px) {
+  .exam-date .nav-tabs .nav-link {
+    min-height: 185px;
+    padding-top: 20px;
+  }
+}
 .exam-date .nav-tabs .nav-link:hover {
   background: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
 }
@@ -15433,6 +15466,11 @@ a.zoom-tutorial:hover {
   border: 3px solid #f9be13;
   border-radius: 5px;
   padding-top: 27px;
+}
+@media (max-width: 767.98px) {
+  .exam-date .nav-tabs .nav-link.active {
+    padding-top: 17px;
+  }
 }
 .exam-date .nav-tabs .nav-link.active::before {
   content: "";
@@ -15445,6 +15483,14 @@ a.zoom-tutorial:hover {
   left: 50%;
   margin-left: -27px;
   border-bottom: 1px solid rgba(207, 207, 206, 0.2);
+}
+@media (max-width: 767.98px) {
+  .exam-date .nav-tabs .nav-link.active::before {
+    height: 44px;
+    width: 44px;
+    bottom: -22px;
+    margin-left: -22px;
+  }
 }
 .exam-date .nav-tabs .nav-link.active::after {
   content: "";
@@ -15459,33 +15505,104 @@ a.zoom-tutorial:hover {
   width: 44px;
   height: 44px;
 }
+@media (max-width: 767.98px) {
+  .exam-date .nav-tabs .nav-link.active::after {
+    height: 34px;
+    width: 34px;
+    bottom: -17px;
+    margin-left: -17px;
+  }
+}
 .exam-date-month {
   font-size: 28px;
   font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
   line-height: 1;
+}
+@media (max-width: 767.98px) {
+  .exam-date-month {
+    font-size: 23px;
+  }
 }
 .exam-date-date {
   font-size: 21px;
   font-family: "RubrikEdgeNew-Light", Tahoma, Arial, Helvetica, sans-serif;
   margin-bottom: 30px;
 }
+@media (max-width: 767.98px) {
+  .exam-date-date {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+}
 .exam-date-text {
   font-size: 18px;
   font-family: "RubrikEdgeNew-Light", Tahoma, Arial, Helvetica, sans-serif;
   color: #ababab;
+}
+@media (max-width: 767.98px) {
+  .exam-date-text {
+    font-size: 15px;
+  }
 }
 .exam-date-hours {
   font-size: 21px;
   font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
   line-height: 1;
 }
+@media (max-width: 767.98px) {
+  .exam-date-hours {
+    font-size: 17px;
+  }
+}
 .exam-date-hours.unspecified {
   font-size: 18px;
+}
+@media (max-width: 767.98px) {
+  .exam-date-hours.unspecified {
+    font-size: 17px;
+  }
 }
 .exam-date .tab-content {
   max-width: 850px;
   margin: 0 auto;
+}
+
+.exam-info {
+  padding: 50px 20px;
+  text-align: center;
   background: linear-gradient(to top, rgba(94, 180, 97, 0.1), rgba(94, 180, 97, 0));
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.tax-text {
+  font-size: 21px;
+  font-family: "RubrikEdgeNew-Light", Tahoma, Arial, Helvetica, sans-serif;
+  color: #5eb461;
+}
+.tax-text span {
+  color: #fff;
+}
+
+.exam-price {
+  font-size: 50px;
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+}
+.exam-price sup {
+  text-transform: uppercase;
+  font-family: "RubrikEdgeNew-Light", Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 28px;
+}
+
+.exam-offset {
+  max-width: 425px;
+  margin: -25px auto 0;
+  text-align: center;
+}
+.exam-offset-text {
+  font-family: "RubrikEdgeNew-Light", Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #7a7a7a;
 }
 
 .footer {
