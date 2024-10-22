@@ -398,8 +398,47 @@
           <p class="subtitle-text mt-2 mb-0">
             Certificat acreditat Cod COR 242401
           </p>
+
+          <div class="main-content-header mt-5 mb-5">
+            <div class="main-content-header-icon white">
+              <svg>
+                <use href="../assets/images/sprite.svg#icon-pickup-man"></use>
+              </svg>
+            </div>
+            <div class="main-content-header-headings d-flex align-items-end">
+              <h4 class="main-content-header-headings-title">
+                Detalii livrare
+              </h4>
+            </div>
+            <div
+              class="main-content-header-text main-content-header-text-big grey"
+            >
+              <p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat...
+              </p>
+            </div>
+          </div>
+          <form class="need-validation" novalidate>
+            <div class="row">
+              <div class="col-6">
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="Nume Prenume"
+                  />
+                  <label for="floatingInput">Nume Prenume</label>
+                  <div class="invalid-feedback">
+                    Va rugam introduceti numele si prenumele
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="container-xl-custom mt-5 mb-5">
+        <div class="container-narrow mt-5 mb-5">
           <h4 class="exam-date-section-title yellow mb-4 text-center">
             Alegeti data in care doriti sã sustineti examenul:
           </h4>
@@ -439,63 +478,6 @@
                   <span class="exam-date-hours">10:00 - 12:00</span>
                 </button>
               </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="date-tab-3"
-                  data-bs-toggle="tab"
-                  data-bs-target="#date-tab-pane-3"
-                  type="button"
-                  role="tab"
-                  aria-controls="date-tab-pane-3"
-                  aria-selected="false"
-                >
-                  <span class="exam-date-month">Noiembrie</span>
-                  <span class="exam-date-date">21.11.2024</span>
-                  <span class="exam-date-text">Interval orar</span>
-                  <span class="exam-date-hours unspecified"
-                    >urmeaza a fi comunicat</span
-                  >
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="date-tab-4"
-                  data-bs-toggle="tab"
-                  data-bs-target="#date-tab-pane-4"
-                  type="button"
-                  role="tab"
-                  aria-controls="date-tab-pane-4"
-                  aria-selected="false"
-                >
-                  <span class="exam-date-month">Ianuarie</span>
-                  <span class="exam-date-date">21.01.2025</span>
-                  <span class="exam-date-text">Interval orar</span>
-                  <span class="exam-date-hours unspecified"
-                    >urmeaza a fi comunicat</span
-                  >
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="date-tab-5"
-                  data-bs-toggle="tab"
-                  data-bs-target="#date-tab-pane-5"
-                  type="button"
-                  role="tab"
-                  aria-controls="date-tab-pane-5"
-                  aria-selected="false"
-                >
-                  <span class="exam-date-month">Martie</span>
-                  <span class="exam-date-date">11.03.2025</span>
-                  <span class="exam-date-text">Interval orar</span>
-                  <span class="exam-date-hours unspecified"
-                    >urmeaza a fi comunicat</span
-                  >
-                </button>
-              </li>
             </ul>
             <div class="tab-content" id="dateTabContent">
               <div
@@ -505,14 +487,6 @@
                 aria-labelledby="date-tab-1"
                 tabindex="0"
               >
-                <div class="exam-info">
-                  <div class="tax-text mb-4">
-                    Taxa reprogramare examen -
-                    <span>pentru data de <strong>17.09.2024</strong> </span>
-                  </div>
-                  <div class="exam-price">350 <sup>ron</sup></div>
-                </div>
-
                 <div class="exam-offset">
                   <a class="btn btn-pill btn-pill-full btn-pill-green" href="#">
                     Plãteste acum online
@@ -530,14 +504,6 @@
                 aria-labelledby="date-tab-2"
                 tabindex="0"
               >
-                <div class="exam-info">
-                  <div class="tax-text mb-4">
-                    Taxa reprogramare examen -
-                    <span>pentru data de <strong>22.10.2024</strong> </span>
-                  </div>
-                  <div class="exam-price">450 <sup>ron</sup></div>
-                </div>
-
                 <div class="exam-offset">
                   <a class="btn btn-pill btn-pill-full btn-pill-green" href="#">
                     Plãteste acum online
@@ -547,33 +513,6 @@
                     siguranta prin intermediul Netopia Payments
                   </div>
                 </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="date-tab-pane-3"
-                role="tabpanel"
-                aria-labelledby="date-tab-3"
-                tabindex="0"
-              >
-                3
-              </div>
-              <div
-                class="tab-pane fade"
-                id="date-tab-pane-4"
-                role="tabpanel"
-                aria-labelledby="date-tab-4"
-                tabindex="0"
-              >
-                4
-              </div>
-              <div
-                class="tab-pane fade"
-                id="date-tab-pane-5"
-                role="tabpanel"
-                aria-labelledby="date-tab-5"
-                tabindex="0"
-              >
-                5
               </div>
             </div>
           </div>
