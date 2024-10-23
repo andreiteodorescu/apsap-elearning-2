@@ -130,16 +130,21 @@
       margin-left: -24px;
       border: 2px solid $blue-violet;
       background-color: transparent;
+      margin-left: -24px !important;
 
       &:checked {
         background-color: $blue-violet;
         border-color: $blue-violet;
+
+        &[type="checkbox"] {
+          background-image: url("../assets/images/form-check-input-white.svg");
+          background-size: 20px 20px;
+        }
       }
     }
 
     .form-check-label {
-      position: relative;
-      top: 3px;
+      margin-top: 4px;
     }
 
     &-check-policy {

@@ -15983,14 +15983,18 @@ a.zoom-tutorial:hover {
   margin-left: -24px;
   border: 2px solid #203d74;
   background-color: transparent;
+  margin-left: -24px !important;
 }
 .footer-form .form-check-input:checked {
   background-color: #203d74;
   border-color: #203d74;
 }
+.footer-form .form-check-input:checked[type=checkbox] {
+  background-image: url("../assets/images/form-check-input-white.svg");
+  background-size: 20px 20px;
+}
 .footer-form .form-check-label {
-  position: relative;
-  top: 3px;
+  margin-top: 4px;
 }
 .footer-form-check-policy {
   font-family: "RubrikEdgeNew-Medium", Tahoma, Arial, Helvetica, sans-serif !important;
