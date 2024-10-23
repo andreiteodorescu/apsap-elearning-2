@@ -1,0 +1,27 @@
+.not-found-component {
+  padding-bottom: 50px;
+
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 0;
+  }
+}
+
+.not-found-logo {
+  @include media-breakpoint-down(sm) {
+    width: auto;
+    height: auto;
+  }
+}
+
+.not-found-text {
+  font-size: 18px;
+
+  a {
+    text-decoration: none;
+
+    &:active,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

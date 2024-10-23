@@ -343,89 +343,293 @@
           <div class="main-content-header">
             <div class="main-content-header-icon">
               <svg>
-                <use href="../assets/images/sprite.svg#icon-bills"></use>
+                <use href="../assets/images/sprite.svg#icon-document"></use>
               </svg>
             </div>
-            <div class="main-content-header-headings">
+            <div class="main-content-header-headings d-flex align-items-end">
               <h4 class="main-content-header-headings-title green">
-                Facturile mele
+                Documentele mele
               </h4>
-              <div class="main-content-header-headings-subtitle">
-                <strong>1 factura neachitata</strong>
-              </div>
-              <div class="main-content-header-headings-subtitle">
-                1 factura achitata
-              </div>
             </div>
             <div class="main-content-header-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+              Dimensinea fisierelor incärcate trebuie sã fie de maximum 1.5 MB.
+              Formatele acceptate sunt PDF, JPG, JPEG, PNG sau BMP. Vã
+              recomandãm folosirea aplicatiilor de comprimare a fisierelor (<a
+                href="#"
+                >www.ilovepdf.com</a
+              >, <a href="#">www.tinyirg.com</a>). Nu se accepta arhive de
+              tip.RAR sau .ZIP.
             </div>
           </div>
-          <ul class="list-unstyled list-group list-group-flush assets-list">
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-md-7 mb-4 mb-md-0">
-                  <h4 class="medium-title medium-title-small yellow">
-                    <span>Curs</span> on-line autorizat
-                  </h4>
-                  <h3 class="main-title main-title-medium text-uppercase mb-0">
-                    Design interior
-                  </h3>
-                  <p class="subtitle-text subtitle-text-medium mt-1 mb-0">
-                    Certificat acreditat Cod COR 242401
-                  </p>
-                </div>
-                <div class="col-md-5 d-flex flex-column">
-                  <div
-                    class="assets-list-info mb-md-4 mt-3 mt-md-0 order-1 order-md-0 orange"
-                  >
-                    Te-ai inscris la acest curs in data de
-                    <strong>15/11/2024</strong>, achita factura pentru a avea
-                    acces la curs!
+          <div class="main-content-header mb-4">
+            <div class="main-content-header-headings">
+              <h4 class="main-content-header-headings-title">
+                DOCUMENTELE INCARCATE IN PLATFORMA
+              </h4>
+            </div>
+            <div class="main-content-header-text white">
+              Pentru a reincarca datele, daca este necesar, poti apasa pe campul
+              cu numele actului respectiv si vei putea reincarca fisierul.
+            </div>
+          </div>
+          <div class="row g-3 mt-4 mb-4">
+            <div class="col-lg-6">
+              <button class="upload-docs-btn uploaded">
+                Copie carte de identitate
+                <span>PDF, JPG, JPEG, PNG sau BMP</span>
+              </button>
+            </div>
+            <div class="col-lg-6">
+              <button
+                class="upload-docs-btn uploaded"
+                data-bs-toggle="modal"
+                data-bs-target="#docsModal2"
+              >
+                Copie diploma de studii
+                <span>ultima diploma de studii</span>
+              </button>
+
+              <!-- Modal start -->
+              <div
+                class="modal fade"
+                id="docsModal2"
+                tabindex="-1"
+                aria-labelledby="docsModalLabel2"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="docs-modal-title" id="docsModalLabel2">
+                        Incarca
+                        <strong>ultima diploma de studii obtinuta</strong>
+                      </h4>
+                      <div class="docs-modal-subtitle">
+                        Fisiere acceptate:
+                        <strong>PDF, JPG, JPEG, PNG sau BMP</strong>
+                      </div>
+                      <div class="docs-modal-subtitle">
+                        Dimensiunea fisierelor incarcate trebuie sa fie de
+                        maximum <strong>1.5 MB</strong>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn-close custom-modal-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div
+                      class="modal-body d-flex flex-column align-items-center"
+                    >
+                      <p class="mb-2">Ce tip de diploma de studii incarcati?</p>
+
+                      <div class="degree-select mb-4">
+                        <ul class="list-unstyled list-group">
+                          <li class="list-group-item">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="flexRadioDefault"
+                                id="flexRadioDefault1"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexRadioDefault1"
+                              >
+                                Diploma de Licenta/Adeverinta inlocuitoare a
+                                Diplomei de Licenta
+                              </label>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="flexRadioDefault"
+                                id="flexRadioDefault2"
+                                checked
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexRadioDefault2"
+                              >
+                                Diploma de Master/Adeverinta inlocuitoare a
+                                Diplomei de Master
+                              </label>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="form-check">
+                              <input
+                                class="form-check-input"
+                                type="radio"
+                                name="flexRadioDefault"
+                                id="flexRadioDefault3"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexRadioDefault3"
+                              >
+                                Diploma de Doctor/Adeverinta inlocuitoare a
+                                Diplomei de Doctor
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="custom-file">
+                        <label for="file-upload" class="custom-file-upload">
+                          <span>Alege fisier</span>
+                        </label>
+                        <input id="file-upload" type="file" />
+                      </div>
+                      <span class="no-file">Niciun fisier ales</span>
+                      <button class="btn btn-pill btn-pill-full btn-pill-blue">
+                        Incarca documentul
+                      </button>
+                    </div>
                   </div>
-                  <a
-                    class="btn btn-pill btn-pill-full btn-pill-orange order-0 order-md-1"
-                    href="#"
-                    >Achita <span>factura</span></a
-                  >
                 </div>
               </div>
-            </li>
-            <li class="list-group-item payed">
-              <div class="row">
-                <div class="col-md-7 mb-4 mb-md-0">
-                  <h4 class="medium-title medium-title-small yellow">
-                    <span>Curs</span> on-line autorizat
-                  </h4>
-                  <h3 class="main-title main-title-medium text-uppercase mb-0">
-                    Formator şi public speaking
-                  </h3>
-                  <p class="subtitle-text subtitle-text-medium mt-1 mb-0">
-                    Certificat acreditat Cod COR 242401
-                  </p>
-                </div>
-                <div class="col-md-5 d-flex flex-column">
-                  <div
-                    class="assets-list-info mb-md-4 mt-3 mt-md-0 order-1 order-md-0 green"
-                  >
-                    Ai platit accesul la acest curs in data de
-                    <strong>02/10/2024</strong>, poti vizualiza sau desacarca
-                    factura fiscala de mai jos.
+              <!-- Modal end -->
+            </div>
+            <div class="col-lg-6">
+              <button
+                class="upload-docs-btn uploaded"
+                data-bs-toggle="modal"
+                data-bs-target="#docsModal3"
+              >
+                Copie certificat de nastere
+                <span>PDF, JPG, JPEG, PNG sau BMP</span>
+              </button>
+
+              <!-- Modal start -->
+              <div
+                class="modal fade"
+                id="docsModal3"
+                tabindex="-1"
+                aria-labelledby="docsModalLabel3"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="docs-modal-title" id="docsModalLabel3">
+                        Incarca <strong>copie certificat de nastere</strong>
+                      </h4>
+                      <div class="docs-modal-subtitle">
+                        Fisiere acceptate:
+                        <strong>PDF, JPG, JPEG, PNG sau BMP</strong>
+                      </div>
+                      <div class="docs-modal-subtitle">
+                        Dimensiunea fisierelor incarcate trebuie sa fie de
+                        maximum <strong>1.5 MB</strong>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn-close custom-modal-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div
+                      class="modal-body d-flex flex-column align-items-center"
+                    >
+                      <div class="custom-file">
+                        <label for="file-upload" class="custom-file-upload">
+                          <span>Alege fisier</span>
+                        </label>
+                        <input id="file-upload" type="file" />
+                      </div>
+                      <span class="no-file">Niciun fisier ales</span>
+                      <button class="btn btn-pill btn-pill-full btn-pill-blue">
+                        Incarca documentul
+                      </button>
+                    </div>
                   </div>
-                  <a
-                    class="btn btn-pill btn-pill-full btn-pill-green order-0 order-md-1"
-                    href="#"
-                    >Vezi/Descarca <span>factura</span></a
-                  >
                 </div>
               </div>
-            </li>
-          </ul>
+              <!-- Modal end -->
+            </div>
+            <div class="col-lg-6">
+              <button
+                class="upload-docs-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#docsModal4"
+              >
+                Copie certificat de casatorie
+                <span
+                  >doar dacă v-ati schimbat numele din certificatul de
+                  nastere</span
+                >
+              </button>
+              <!-- Modal start -->
+              <div
+                class="modal fade"
+                id="docsModal4"
+                tabindex="-1"
+                aria-labelledby="docsModalLabel4"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="docs-modal-title" id="docsModalLabel4">
+                        Incarca <strong>copie certificat de casatorie</strong>
+                      </h4>
+                      <div class="docs-modal-subtitle">
+                        Fisiere acceptate:
+                        <strong>PDF, JPG, JPEG, PNG sau BMP</strong>
+                      </div>
+                      <div class="docs-modal-subtitle">
+                        Dimensiunea fisierelor incarcate trebuie sa fie de
+                        maximum <strong>1.5 MB</strong>
+                      </div>
+                      <button
+                        type="button"
+                        class="btn-close custom-modal-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div
+                      class="modal-body d-flex flex-column align-items-center"
+                    >
+                      <div class="custom-file">
+                        <label for="file-upload" class="custom-file-upload">
+                          <span>Alege fisier</span>
+                        </label>
+                        <input id="file-upload" type="file" />
+                      </div>
+                      <span class="no-file">Niciun fisier ales</span>
+                      <button class="btn btn-pill btn-pill-full btn-pill-blue">
+                        Incarca documentul
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal end -->
+            </div>
+            <div class="col-12">
+              <button class="upload-docs-btn">
+                Mai multe sau documentele de mai sus
+                <span
+                  >in situatia in care aveti un document PDF care contine toate
+                  documentele solicitate prin procedura</span
+                >
+              </button>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-pill btn-pill-full btn-pill-green">
+                Actualizeaza documentele
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </main>

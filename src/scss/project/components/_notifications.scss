@@ -1,0 +1,126 @@
+.notifications-component {
+  &-title {
+    font-family: $font-family-bold;
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  .main-content-header-icon {
+    margin-top: 0;
+    position: relative;
+    width: auto;
+    margin-right: 10px;
+
+    svg {
+      width: 60px;
+      height: 60px;
+    }
+
+    .notifications-badge {
+      top: auto;
+      bottom: -15px;
+    }
+  }
+}
+
+.notifications-list {
+  margin: 0;
+
+  &-item {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid rgba(207, 207, 206, 0.2);
+    font-family: $font-family-light;
+    font-size: 14px;
+    color: $grey-extralight;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+    &-date {
+      font-family: $font-family-base;
+      color: $grey-medium-4;
+      padding-bottom: 14px;
+      position: relative;
+    }
+
+    &-text {
+      padding-bottom: 14px;
+    }
+
+    &.unread {
+      font-family: $font-family-extrabold;
+
+      .notifications-list-item-date {
+        color: $red;
+
+        &::before {
+          content: "";
+          height: 5px;
+          width: 100%;
+          background-color: $red;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+.load-notifications-btn {
+  border: none;
+  background: none;
+  color: $grey-medium-4;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+
+  svg {
+    fill: $grey-medium-4;
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.notification-title {
+  font-size: 32px;
+  font-family: $font-family-base;
+
+  strong {
+    font-family: $font-family-extrabold;
+  }
+}
+
+.notification-text {
+  font-size: 21px;
+}
+
+.notification-icon {
+  svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  &.green {
+    svg {
+      fill: $green;
+    }
+  }
+
+  &.yellow {
+    svg {
+      fill: $yellow;
+    }
+  }
+
+  &.red {
+    svg {
+      fill: $red;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-.bills-list {
+.assets-list {
   margin: 0;
 
   .list-group-item {
@@ -10,41 +10,15 @@
     &:last-child {
       border-bottom-width: 1px;
     }
-
-    .btn {
-      background-color: $orange;
-
-      &:active,
-      &:hover,
-      &:first-child:active,
-      &:focus-visible {
-        background-color: $orange-2 !important;
-      }
-    }
-
-    .bills-list-info {
-      color: $orange;
-    }
-
-    &.payed {
-      .btn {
-        background-color: $green;
-
-        &:active,
-        &:hover,
-        &:first-child:active,
-        &:focus-visible {
-          background-color: $green-hover !important;
-        }
-      }
-
-      .bills-list-info {
-        color: $green;
-      }
-    }
   }
 
   &-info {
     font-size: 14px;
+  }
+}
+
+.my-courses-list {
+  .list-group-item .assets-list-info {
+    color: $grey-medium-2;
   }
 }

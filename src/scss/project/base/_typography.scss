@@ -104,6 +104,11 @@ strong {
       font-size: 21px;
     }
   }
+
+  &-caps {
+    font-size: 60px;
+    font-family: $font-family-bebas-regular;
+  }
 }
 
 .medium-title {
@@ -137,6 +142,11 @@ strong {
     @include media-breakpoint-down(md) {
       font-size: 19px;
     }
+  }
+
+  &-caps {
+    font-size: 32px;
+    font-family: $font-family-bebas-regular;
   }
 }
 

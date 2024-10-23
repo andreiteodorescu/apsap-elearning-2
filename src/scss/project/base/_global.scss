@@ -155,6 +155,10 @@ body {
       &.white svg {
         fill: #fff;
       }
+
+      &.red svg {
+        fill: $red;
+      }
     }
 
     &-headings {
@@ -244,5 +248,15 @@ body {
   .col-xs-custom {
     flex: 0 0 auto;
     width: 100%;
+  }
+}
+
+.green-link {
+  color: $green;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
   }
 }

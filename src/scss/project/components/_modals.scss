@@ -25,3 +25,16 @@
 .docs-modal-subtitle {
   font-size: 14px;
 }
+
+.notification-modal {
+  font-family: $font-family-base;
+  color: $grey-dark-2;
+
+  .modal-header {
+    border: none;
+  }
+
+  .modal-body {
+    padding: 35px 20px;
+  }
+}

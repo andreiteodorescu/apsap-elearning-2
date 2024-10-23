@@ -87,6 +87,32 @@
     }
   }
 
+  &-red {
+    background-color: $red;
+    color: #fff;
+
+    &:active,
+    &:hover,
+    &:first-child:active,
+    &:focus-visible {
+      background-color: $red-hover !important;
+      color: #fff !important;
+    }
+  }
+
+  &-orange {
+    background-color: $orange;
+    color: $blue-main;
+
+    &:active,
+    &:hover,
+    &:first-child:active,
+    &:focus-visible {
+      background-color: $orange-hover !important;
+      color: $blue-main !important;
+    }
+  }
+
   &-small {
     min-width: 220px;
     font-size: 16px;

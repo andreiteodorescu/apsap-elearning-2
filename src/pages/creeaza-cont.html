@@ -343,89 +343,79 @@
           <div class="main-content-header">
             <div class="main-content-header-icon">
               <svg>
-                <use href="../assets/images/sprite.svg#icon-bills"></use>
+                <use href="../assets/images/sprite.svg#icon-login"></use>
               </svg>
             </div>
-            <div class="main-content-header-headings">
+            <div class="main-content-header-headings d-flex align-items-end">
               <h4 class="main-content-header-headings-title green">
-                Facturile mele
+                Intra <span class="white">in cont</span>
               </h4>
-              <div class="main-content-header-headings-subtitle">
-                <strong>1 factura neachitata</strong>
-              </div>
-              <div class="main-content-header-headings-subtitle">
-                1 factura achitata
-              </div>
             </div>
             <div class="main-content-header-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+              Intra in contul tau de utilizator pentru a incepe cea mai buna
+              experienta de formare, iti poti veda progresul, incarca
+              documentele necesare si descarca certificatul de participare. Daca
+              nu ai deja un cont il poti crea, foarte usor de aici sau apasand
+              pe butonul “creeaza un cont” de mai jos.
             </div>
           </div>
-          <ul class="list-unstyled list-group list-group-flush assets-list">
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-md-7 mb-4 mb-md-0">
-                  <h4 class="medium-title medium-title-small yellow">
-                    <span>Curs</span> on-line autorizat
-                  </h4>
-                  <h3 class="main-title main-title-medium text-uppercase mb-0">
-                    Design interior
-                  </h3>
-                  <p class="subtitle-text subtitle-text-medium mt-1 mb-0">
-                    Certificat acreditat Cod COR 242401
-                  </p>
-                </div>
-                <div class="col-md-5 d-flex flex-column">
-                  <div
-                    class="assets-list-info mb-md-4 mt-3 mt-md-0 order-1 order-md-0 orange"
-                  >
-                    Te-ai inscris la acest curs in data de
-                    <strong>15/11/2024</strong>, achita factura pentru a avea
-                    acces la curs!
-                  </div>
-                  <a
-                    class="btn btn-pill btn-pill-full btn-pill-orange order-0 order-md-1"
-                    href="#"
-                    >Achita <span>factura</span></a
-                  >
+
+          <form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-12 mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-general"
+                  id="loginCNP"
+                  placeholder="CNP"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Introdu un CNP real, fara el nu vei putea folosi platforma
                 </div>
               </div>
-            </li>
-            <li class="list-group-item payed">
-              <div class="row">
-                <div class="col-md-7 mb-4 mb-md-0">
-                  <h4 class="medium-title medium-title-small yellow">
-                    <span>Curs</span> on-line autorizat
-                  </h4>
-                  <h3 class="main-title main-title-medium text-uppercase mb-0">
-                    Formator şi public speaking
-                  </h3>
-                  <p class="subtitle-text subtitle-text-medium mt-1 mb-0">
-                    Certificat acreditat Cod COR 242401
-                  </p>
-                </div>
-                <div class="col-md-5 d-flex flex-column">
-                  <div
-                    class="assets-list-info mb-md-4 mt-3 mt-md-0 order-1 order-md-0 green"
-                  >
-                    Ai platit accesul la acest curs in data de
-                    <strong>02/10/2024</strong>, poti vizualiza sau desacarca
-                    factura fiscala de mai jos.
-                  </div>
-                  <a
-                    class="btn btn-pill btn-pill-full btn-pill-green order-0 order-md-1"
-                    href="#"
-                    >Vezi/Descarca <span>factura</span></a
-                  >
+              <div class="col-12 mb-3">
+                <input
+                  type="email"
+                  class="form-control form-control-general"
+                  id="loginEmail"
+                  placeholder="Adresa ta de email"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Introdu adresa de email valida
                 </div>
               </div>
-            </li>
-          </ul>
+              <div class="col-12 mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-general"
+                  id="loginPass"
+                  placeholder="Parola"
+                  required
+                />
+                <div class="invalid-feedback">Introdu parola</div>
+              </div>
+              <div class="col-12">
+                <div class="row align-items-center">
+                  <div class="col-6 col-md-4 order-1 order-md-0">
+                    <a class="green-link" href="#">Ai uitat parola?</a>
+                  </div>
+                  <div class="col-12 mb-3 mb-md-0 col-md-4 order-0 order-md-1">
+                    <button
+                      type="submit"
+                      class="btn btn-pill btn-pill-full btn-pill-green"
+                    >
+                      Autentificare
+                    </button>
+                  </div>
+                  <div class="col-6 col-md-4 text-end order-2">
+                    <a class="green-link" href="#">Creeaza un cont</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </main>

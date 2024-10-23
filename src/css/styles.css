@@ -13112,6 +13112,9 @@ body.course-page {
 .main-content-header-icon.white svg {
   fill: #fff;
 }
+.main-content-header-icon.red svg {
+  fill: #cd1c39;
+}
 .main-content-header-headings {
   flex: 1;
 }
@@ -13185,6 +13188,14 @@ body.course-page {
     width: 100%;
   }
 }
+.green-link {
+  color: #5eb461;
+  text-decoration: none;
+}
+.green-link:hover, .green-link:active {
+  text-decoration: underline;
+}
+
 @font-face {
   font-family: "RubrikEdgeNew-Bold";
   src: url("../assets/fonts/rubrikedgenew-bold-webfont.woff2") format("woff2"), url("../assets/fonts/rubrikedgenew-bold-webfont.woff") format("woff");
@@ -13266,6 +13277,10 @@ strong {
     font-size: 21px;
   }
 }
+.main-title-caps {
+  font-size: 60px;
+  font-family: "BebasNeue-Regular", Tahoma, Arial, Helvetica, sans-serif;
+}
 
 .medium-title {
   font-size: 32px;
@@ -13296,6 +13311,10 @@ strong {
   .medium-title-small {
     font-size: 19px;
   }
+}
+.medium-title-caps {
+  font-size: 32px;
+  font-family: "BebasNeue-Regular", Tahoma, Arial, Helvetica, sans-serif;
 }
 
 .subtitle-text-medium {
@@ -13367,6 +13386,22 @@ strong {
 .btn-pill-blue:active, .btn-pill-blue:hover, .btn-pill-blue:first-child:active, .btn-pill-blue:focus-visible {
   background-color: #1d66af !important;
   color: #fff !important;
+}
+.btn-pill-red {
+  background-color: #cd1c39;
+  color: #fff;
+}
+.btn-pill-red:active, .btn-pill-red:hover, .btn-pill-red:first-child:active, .btn-pill-red:focus-visible {
+  background-color: #e12e4b !important;
+  color: #fff !important;
+}
+.btn-pill-orange {
+  background-color: #f16822;
+  color: #101228;
+}
+.btn-pill-orange:active, .btn-pill-orange:hover, .btn-pill-orange:first-child:active, .btn-pill-orange:focus-visible {
+  background-color: #ef773a !important;
+  color: #101228 !important;
 }
 .btn-pill-small {
   min-width: 220px;
@@ -13725,6 +13760,13 @@ strong {
 }
 .blue a {
   color: #1f71b8;
+}
+
+.orange {
+  color: #f16822;
+}
+.orange a {
+  color: #f16822;
 }
 
 .white {
@@ -15029,6 +15071,17 @@ a.zoom-tutorial:hover {
   font-size: 14px;
 }
 
+.notification-modal {
+  font-family: "RubrikEdgeNew-Regular", Tahoma, Arial, Helvetica, sans-serif;
+  color: #333232;
+}
+.notification-modal .modal-header {
+  border: none;
+}
+.notification-modal .modal-body {
+  padding: 35px 20px;
+}
+
 .keyboard-title {
   font-size: 32px;
   font-family: "BebasNeue-Regular", Tahoma, Arial, Helvetica, sans-serif;
@@ -15169,38 +15222,24 @@ a.zoom-tutorial:hover {
   }
 }
 
-.bills-list {
+.assets-list {
   margin: 0;
 }
-.bills-list .list-group-item {
+.assets-list .list-group-item {
   background-color: transparent;
   border-bottom: 1px solid rgba(207, 207, 206, 0.4);
   color: #fff;
   padding: 20px 0;
 }
-.bills-list .list-group-item:last-child {
+.assets-list .list-group-item:last-child {
   border-bottom-width: 1px;
 }
-.bills-list .list-group-item .btn {
-  background-color: #f16822;
-}
-.bills-list .list-group-item .btn:active, .bills-list .list-group-item .btn:hover, .bills-list .list-group-item .btn:first-child:active, .bills-list .list-group-item .btn:focus-visible {
-  background-color: #e77b3c !important;
-}
-.bills-list .list-group-item .bills-list-info {
-  color: #f16822;
-}
-.bills-list .list-group-item.payed .btn {
-  background-color: #5eb461;
-}
-.bills-list .list-group-item.payed .btn:active, .bills-list .list-group-item.payed .btn:hover, .bills-list .list-group-item.payed .btn:first-child:active, .bills-list .list-group-item.payed .btn:focus-visible {
-  background-color: #66cb69 !important;
-}
-.bills-list .list-group-item.payed .bills-list-info {
-  color: #5eb461;
-}
-.bills-list-info {
+.assets-list-info {
   font-size: 14px;
+}
+
+.my-courses-list .list-group-item .assets-list-info {
+  color: #ababab;
 }
 
 .quiz-user-info {
@@ -15688,6 +15727,134 @@ a.zoom-tutorial:hover {
 .delivery-prices .exam-offset {
   margin-top: 50px;
   max-width: none;
+}
+
+.notifications-component-title {
+  font-family: "RubrikEdgeNew-Bold", Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+.notifications-component .main-content-header-icon {
+  margin-top: 0;
+  position: relative;
+  width: auto;
+  margin-right: 10px;
+}
+.notifications-component .main-content-header-icon svg {
+  width: 60px;
+  height: 60px;
+}
+.notifications-component .main-content-header-icon .notifications-badge {
+  top: auto;
+  bottom: -15px;
+}
+
+.notifications-list {
+  margin: 0;
+}
+.notifications-list-item {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid rgba(207, 207, 206, 0.2);
+  font-family: "RubrikEdgeNew-Light", Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #d5d5d4;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.notifications-list-item-date {
+  font-family: "RubrikEdgeNew-Regular", Tahoma, Arial, Helvetica, sans-serif;
+  color: #7a7a7a;
+  padding-bottom: 14px;
+  position: relative;
+}
+.notifications-list-item-text {
+  padding-bottom: 14px;
+}
+.notifications-list-item.unread {
+  font-family: "RubrikEdgeNew-Extrabold", Tahoma, Arial, Helvetica, sans-serif;
+}
+.notifications-list-item.unread .notifications-list-item-date {
+  color: #cd1c39;
+}
+.notifications-list-item.unread .notifications-list-item-date::before {
+  content: "";
+  height: 5px;
+  width: 100%;
+  background-color: #cd1c39;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.load-notifications-btn {
+  border: none;
+  background: none;
+  color: #7a7a7a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.load-notifications-btn svg {
+  fill: #7a7a7a;
+  width: 24px;
+  height: 24px;
+}
+.load-notifications-btn:hover {
+  text-decoration: underline;
+}
+
+.notification-title {
+  font-size: 32px;
+  font-family: "RubrikEdgeNew-Regular", Tahoma, Arial, Helvetica, sans-serif;
+}
+.notification-title strong {
+  font-family: "RubrikEdgeNew-Extrabold", Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.notification-text {
+  font-size: 21px;
+}
+
+.notification-icon svg {
+  width: 100px;
+  height: 100px;
+}
+.notification-icon.green svg {
+  fill: #5eb461;
+}
+.notification-icon.yellow svg {
+  fill: #f9be13;
+}
+.notification-icon.red svg {
+  fill: #cd1c39;
+}
+
+.not-found-component {
+  padding-bottom: 50px;
+}
+@media (max-width: 575.98px) {
+  .not-found-component {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .not-found-logo {
+    width: auto;
+    height: auto;
+  }
+}
+
+.not-found-text {
+  font-size: 18px;
+}
+.not-found-text a {
+  text-decoration: none;
+}
+.not-found-text a:active, .not-found-text a:hover {
+  text-decoration: underline;
 }
 
 .footer {

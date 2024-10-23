@@ -340,92 +340,62 @@
     <main id="content" class="main">
       <div class="main-content">
         <div class="container-narrow">
-          <div class="main-content-header">
-            <div class="main-content-header-icon">
+          <section class="notifications-component">
+            <h4 class="notifications-component-title text-center">
+              Prenume Nume
+            </h4>
+            <div class="main-content-header">
+              <div class="main-content-header-icon red">
+                <svg>
+                  <use
+                    href="../assets/images/sprite.svg#icon-notification"
+                  ></use>
+                </svg>
+                <span class="notifications-badge">1</span>
+              </div>
+              <div class="main-content-header-headings d-flex align-items-end">
+                <h4 class="main-content-header-headings-title">Notificãri</h4>
+              </div>
+              <div class="main-content-header-text">
+                Urmareste-ti notificarile si afla ce pasi trebuie sa faci ca sa
+                poti primi certificarea dorita. Poti rasfoi oferta completa
+                <a href="#"><strong>aici</strong></a
+                >!
+              </div>
+            </div>
+            <ul class="list-unstyled notifications-list">
+              <li
+                class="notifications-list-item unread"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <div class="notifications-list-item-date">09/11/2024</div>
+                <div class="notifications-list-item-text">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris.
+                </div>
+              </li>
+              <li class="notifications-list-item">
+                <div class="notifications-list-item-date">02/11/2024</div>
+                <div class="notifications-list-item-text">
+                  Sed ut perspiciatis unde omnis iste natus error sit.
+                </div>
+              </li>
+              <li class="notifications-list-item">
+                <div class="notifications-list-item-date">12/10/2024</div>
+                <div class="notifications-list-item-text">
+                  Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                  nihil impedit
+                </div>
+              </li>
+            </ul>
+            <button class="load-notifications-btn">
               <svg>
-                <use href="../assets/images/sprite.svg#icon-bills"></use>
+                <use href="../assets/images/sprite.svg#icon-notification"></use>
               </svg>
-            </div>
-            <div class="main-content-header-headings">
-              <h4 class="main-content-header-headings-title green">
-                Facturile mele
-              </h4>
-              <div class="main-content-header-headings-subtitle">
-                <strong>1 factura neachitata</strong>
-              </div>
-              <div class="main-content-header-headings-subtitle">
-                1 factura achitata
-              </div>
-            </div>
-            <div class="main-content-header-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-            </div>
-          </div>
-          <ul class="list-unstyled list-group list-group-flush assets-list">
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-md-7 mb-4 mb-md-0">
-                  <h4 class="medium-title medium-title-small yellow">
-                    <span>Curs</span> on-line autorizat
-                  </h4>
-                  <h3 class="main-title main-title-medium text-uppercase mb-0">
-                    Design interior
-                  </h3>
-                  <p class="subtitle-text subtitle-text-medium mt-1 mb-0">
-                    Certificat acreditat Cod COR 242401
-                  </p>
-                </div>
-                <div class="col-md-5 d-flex flex-column">
-                  <div
-                    class="assets-list-info mb-md-4 mt-3 mt-md-0 order-1 order-md-0 orange"
-                  >
-                    Te-ai inscris la acest curs in data de
-                    <strong>15/11/2024</strong>, achita factura pentru a avea
-                    acces la curs!
-                  </div>
-                  <a
-                    class="btn btn-pill btn-pill-full btn-pill-orange order-0 order-md-1"
-                    href="#"
-                    >Achita <span>factura</span></a
-                  >
-                </div>
-              </div>
-            </li>
-            <li class="list-group-item payed">
-              <div class="row">
-                <div class="col-md-7 mb-4 mb-md-0">
-                  <h4 class="medium-title medium-title-small yellow">
-                    <span>Curs</span> on-line autorizat
-                  </h4>
-                  <h3 class="main-title main-title-medium text-uppercase mb-0">
-                    Formator şi public speaking
-                  </h3>
-                  <p class="subtitle-text subtitle-text-medium mt-1 mb-0">
-                    Certificat acreditat Cod COR 242401
-                  </p>
-                </div>
-                <div class="col-md-5 d-flex flex-column">
-                  <div
-                    class="assets-list-info mb-md-4 mt-3 mt-md-0 order-1 order-md-0 green"
-                  >
-                    Ai platit accesul la acest curs in data de
-                    <strong>02/10/2024</strong>, poti vizualiza sau desacarca
-                    factura fiscala de mai jos.
-                  </div>
-                  <a
-                    class="btn btn-pill btn-pill-full btn-pill-green order-0 order-md-1"
-                    href="#"
-                    >Vezi/Descarca <span>factura</span></a
-                  >
-                </div>
-              </div>
-            </li>
-          </ul>
+              <span>incarca <strong>toate notificarile</strong>...</span>
+            </button>
+          </section>
         </div>
       </div>
     </main>
@@ -602,6 +572,110 @@
         </div>
       </div>
     </footer>
+
+    <!-- Notifications modal start -->
+    <div
+      class="modal fade notification-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <h4 class="notification-title text-uppercase mb-4">
+              <strong>Lorem ipsum notification title</strong>
+            </h4>
+            <div class="notification-text">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt.
+            </div>
+            <div class="row mt-6">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <a
+                  class="btn btn-pill btn-pill-full btn-pill-blue shadow-sm"
+                  href=""
+                >
+                  <span>Action button</span>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a
+                  class="btn btn-pill btn-pill-full btn-pill-red shadow-sm"
+                  href=""
+                >
+                  <span>Action button</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Notifications modal end -->
+
+    <!-- Notifications success 1 modal start -->
+    <div
+      class="modal fade notification-modal"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="notification-icon green mb-4">
+              <svg>
+                <use
+                  href="../assets/images/sprite.svg#icon-success-icon-1"
+                ></use>
+              </svg>
+            </div>
+            <h4 class="notification-title mb-4 green">
+              <strong>Success!</strong>
+            </h4>
+            <div class="notification-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="row mt-6 justify-content-center">
+              <div class="col-md-10">
+                <a
+                  class="btn btn-pill btn-pill-full btn-pill-green shadow-sm"
+                  href=""
+                >
+                  <span>Action button</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Notifications success 1 modal end -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script
