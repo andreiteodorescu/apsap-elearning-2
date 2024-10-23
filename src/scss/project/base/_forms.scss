@@ -107,6 +107,21 @@
       color: $yellow;
     }
   }
+
+  &.green {
+    .form-check-input {
+      border-color: $green;
+
+      &:checked {
+        background-color: $green;
+        border-color: $green;
+      }
+    }
+
+    .form-check-label {
+      color: $green;
+    }
+  }
 }
 
 /* Prevent green highlight and checkmark for valid but non-required fields, selects, checkboxes, and radios */

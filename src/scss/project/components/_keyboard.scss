@@ -32,6 +32,7 @@
       font-family: $font-family-bold;
       box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
       transition: all 0.2s ease-out;
+      text-transform: uppercase;
 
       &:hover {
         background: linear-gradient(
