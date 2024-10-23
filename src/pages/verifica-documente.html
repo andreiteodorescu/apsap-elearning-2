@@ -378,241 +378,262 @@
           <p class="subtitle-text mt-2 mb-0">
             Certificat acreditat Cod COR 242401
           </p>
-          <div class="row g-3 mt-4 mb-4">
-            <div class="col-lg-6">
-              <div class="form-field-wrap">
-                <label for="checkFormControlInput1" class="form-label"
-                  >Nume si prenume</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="checkFormControlInput1"
-                />
+          <form class="needs-validation custom-fields-form" novalidate>
+            <div class="row g-3 mt-4 mb-4">
+              <div class="col-lg-6">
+                <div class="form-field-wrap">
+                  <label for="checkFormControlInput1" class="form-label"
+                    >Nume si prenume</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="checkFormControlInput1"
+                    required
+                  />
+                </div>
+                <div class="invalid-feedback">
+                  Va rugam introduceti numele si prenumele
+                </div>
               </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="row gap-xs-custom">
-                <div class="col-6 col-xs-custom">
-                  <div class="form-field-wrap">
-                    <span class="form-label mb-1"
-                      >V-ati nascut in Romania?</span
-                    >
-                    <div class="form-check form-check-inline">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="inlineRadioOptions"
-                        id="inlineRadio1"
-                        value="option1"
-                      />
-                      <label class="form-check-label" for="inlineRadio1"
-                        >DA</label
+              <div class="col-lg-6">
+                <div class="row gap-xs-custom">
+                  <div class="col-6 col-xs-custom">
+                    <div class="form-field-wrap">
+                      <span class="form-label mb-1"
+                        >V-ati nascut in Romania?</span
                       >
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="inlineRadio1"
+                          value="option1"
+                          required
+                        />
+                        <label class="form-check-label" for="inlineRadio1"
+                          >DA</label
+                        >
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="inlineRadio2"
+                          value="option2"
+                          required
+                        />
+                        <label class="form-check-label" for="inlineRadio2"
+                          >NU</label
+                        >
+                      </div>
                     </div>
-                    <div class="form-check form-check-inline">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="inlineRadioOptions"
-                        id="inlineRadio2"
-                        value="option2"
-                      />
-                      <label class="form-check-label" for="inlineRadio2"
-                        >NU</label
+                    <div class="invalid-feedback">
+                      Va rugam alegeti una dintre optiuni
+                    </div>
+                  </div>
+                  <div class="col-6 col-xs-custom">
+                    <div class="form-field-wrap">
+                      <label for="checkFormControlInput2" class="form-label"
+                        >Anul nasterii</label
                       >
+                      <input
+                        type="text"
+                        inputmode="numeric"
+                        class="form-control"
+                        id="checkFormControlInput2"
+                      />
                     </div>
                   </div>
                 </div>
-                <div class="col-6 col-xs-custom">
-                  <div class="form-field-wrap">
-                    <label for="checkFormControlInput2" class="form-label"
-                      >Anul nasterii</label
-                    >
-                    <input
-                      type="text"
-                      inputmode="numeric"
-                      class="form-control"
-                      id="checkFormControlInput2"
-                    />
+              </div>
+              <div class="col-lg-6">
+                <div class="row gap-xs-custom">
+                  <div class="col-6 col-xs-custom">
+                    <div class="form-field-wrap">
+                      <label for="checkFormControlInput3" class="form-label"
+                        >Luna nasterii (01 - 12)</label
+                      >
+                      <input
+                        type="text"
+                        inputmode="numeric"
+                        class="form-control"
+                        id="checkFormControlInput3"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-6 col-xs-custom">
+                    <div class="form-field-wrap">
+                      <label for="checkFormControlInput4" class="form-label"
+                        >Ziua nasterii (01 - 31)</label
+                      >
+                      <input
+                        type="text"
+                        inputmode="numeric"
+                        class="form-control"
+                        id="checkFormControlInput4"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="row gap-xs-custom">
-                <div class="col-6 col-xs-custom">
-                  <div class="form-field-wrap">
-                    <label for="checkFormControlInput3" class="form-label"
-                      >Luna nasterii (01 - 12)</label
-                    >
-                    <input
-                      type="text"
-                      inputmode="numeric"
-                      class="form-control"
-                      id="checkFormControlInput3"
-                    />
+              <div class="col-lg-6">
+                <div class="row gap-xs-custom">
+                  <div class="col-6 col-xs-custom">
+                    <div class="form-field-wrap">
+                      <span for="checkFormControlInput3" class="form-label"
+                        >Judetul nasterii</span
+                      >
+                      <select
+                        class="form-select"
+                        aria-label="Judetul nasterii"
+                        required
+                      >
+                        <option selected></option>
+                        <option value="1">Brasov</option>
+                        <option value="2">Botosanigeles</option>
+                        <option value="3">Bucuresti</option>
+                      </select>
+                    </div>
+                    <div class="invalid-feedback">
+                      Va rugam alegeti judetul nasterii
+                    </div>
                   </div>
-                </div>
-                <div class="col-6 col-xs-custom">
-                  <div class="form-field-wrap">
-                    <label for="checkFormControlInput4" class="form-label"
-                      >Ziua nasterii (01 - 31)</label
-                    >
-                    <input
-                      type="text"
-                      inputmode="numeric"
-                      class="form-control"
-                      id="checkFormControlInput4"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="row gap-xs-custom">
-                <div class="col-6 col-xs-custom">
-                  <div class="form-field-wrap">
-                    <span for="checkFormControlInput3" class="form-label"
-                      >Judetul nasterii</span
-                    >
-                    <select class="form-select" aria-label="Judetul nasterii">
-                      <option selected></option>
-                      <option value="1">Brasov</option>
-                      <option value="2">Botosanigeles</option>
-                      <option value="3">Bucuresti</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-6 col-xs-custom">
-                  <div class="form-field-wrap">
-                    <label for="checkFormControlInput5" class="form-label"
-                      >Localitatea nasterii</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="checkFormControlInput5"
-                    />
+                  <div class="col-6 col-xs-custom">
+                    <div class="form-field-wrap">
+                      <label for="checkFormControlInput5" class="form-label"
+                        >Localitatea nasterii</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="checkFormControlInput5"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="form-field-wrap">
-                <label for="checkFormControlInput6" class="form-label"
-                  >Prenumele tatalui</label
+              <div class="col-lg-6">
+                <div class="form-field-wrap">
+                  <label for="checkFormControlInput6" class="form-label"
+                    >Prenumele tatalui</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="checkFormControlInput6"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-field-wrap">
+                  <label for="checkFormControlInput7" class="form-label"
+                    >Prenumele mamei</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="checkFormControlInput7"
+                  />
+                </div>
+              </div>
+              <div class="col-12 text-center mt-5">
+                <h4 class="keyboard-title">
+                  Tastatură ajutǎtoare pentru <span>caractere speciale</span>
+                </h4>
+                <ul class="keyboard-list list-unstyled">
+                  <li class="keyboard-list-item">
+                    <button>Ã</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Â</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Ã</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Â</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Ã</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Â</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Ã</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Â</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Ã</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Â</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Ã</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Â</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Ã</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Â</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Â</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Ã</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Â</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Ã</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Â</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Ã</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Â</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Ã</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Â</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Ã</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Â</button>
+                  </li>
+                  <li class="keyboard-list-item">
+                    <button>Ã</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <button
+                  type="submit"
+                  class="btn btn-pill btn-pill-full btn-pill-green"
                 >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="checkFormControlInput6"
-                />
+                  Confirm corectitudinea informatiilor
+                </button>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="form-field-wrap">
-                <label for="checkFormControlInput7" class="form-label"
-                  >Prenumele mamei</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="checkFormControlInput7"
-                />
-              </div>
-            </div>
-            <div class="col-12 text-center mt-5">
-              <h4 class="keyboard-title">
-                Tastatură ajutǎtoare pentru <span>caractere speciale</span>
-              </h4>
-              <ul class="keyboard-list list-unstyled">
-                <li class="keyboard-list-item">
-                  <button>Ã</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Â</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Ã</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Â</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Ã</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Â</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Ã</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Â</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Ã</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Â</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Ã</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Â</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Ã</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Â</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Â</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Ã</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Â</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Ã</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Â</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Ã</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Â</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Ã</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Â</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Ã</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Â</button>
-                </li>
-                <li class="keyboard-list-item">
-                  <button>Ã</button>
-                </li>
-              </ul>
-            </div>
-            <div class="col-12">
-              <button class="btn btn-pill btn-pill-full btn-pill-green">
-                Confirm corectitudinea informatiilor
-              </button>
-            </div>
-          </div>
+          </form>
           <div class="generic-text">
             <span class="green"
               >Pentru a corects datele, daca este necesar, poti apasa pe campul

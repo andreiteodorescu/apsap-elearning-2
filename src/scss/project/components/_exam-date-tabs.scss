@@ -219,3 +219,51 @@
     color: $grey-medium-4;
   }
 }
+
+.nav-link-text {
+  font-size: 16px;
+  color: $grey-medium-2;
+}
+
+.delivery-prices {
+  .nav-tabs {
+    .nav-item {
+      @include media-breakpoint-down(lg) {
+        flex-basis: 46%;
+      }
+
+      @include media-breakpoint-down(md) {
+        flex-basis: 49%;
+      }
+
+      @include media-breakpoint-down(sm) {
+        flex-basis: 100%;
+      }
+    }
+
+    .nav-link {
+      min-height: 200px;
+
+      .exam-price {
+        margin-bottom: 20px;
+      }
+
+      &.active {
+        background: linear-gradient(
+          to top,
+          rgba(255, 255, 255, 0.2),
+          rgba(255, 255, 255, 0)
+        );
+
+        .exam-price {
+          margin-bottom: 17px;
+        }
+      }
+    }
+  }
+
+  .exam-offset {
+    margin-top: 50px;
+    max-width: none;
+  }
+}

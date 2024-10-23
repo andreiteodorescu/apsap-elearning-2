@@ -399,7 +399,7 @@
             Certificat acreditat Cod COR 242401
           </p>
 
-          <div class="main-content-header mt-5 mb-5">
+          <div class="main-content-header mt-5 mb-4">
             <div class="main-content-header-icon white">
               <svg>
                 <use href="../assets/images/sprite.svg#icon-pickup-man"></use>
@@ -419,159 +419,282 @@
               </p>
             </div>
           </div>
-          <form class="need-validation" novalidate>
+          <form class="needs-validation" novalidate>
             <div class="row">
-              <div class="col-6">
-                <div class="form-floating">
+              <div class="col-sm-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-general"
+                  id="deliveryName"
+                  placeholder="Nume Prenume"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Va rugam introduceti numele si prenumele
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-general"
+                  id="deliveryPhone"
+                  placeholder="Telefonul tau"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Va rugam introduceti telefonul
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <input
+                  type="email"
+                  class="form-control form-control-general"
+                  id="deliveryEmail"
+                  placeholder="Email-ul tau"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Va rugam introduceti email-ul
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <select
+                  class="form-select form-select-general"
+                  id="deliveryCounty"
+                  aria-label="Alege judetul"
+                  required
+                >
+                  <option value="">Alege judetul</option>
+                  <option value="Arad">Arad</option>
+                  <option value="Valcea">Valcea</option>
+                  <option value="Dolj">Dolj</option>
+                </select>
+                <div class="invalid-feedback">Va rugam alegeti judetul</div>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <select
+                  class="form-select form-select-general"
+                  id="deliveryCity"
+                  aria-label="Alege localitatea"
+                  required
+                >
+                  <option value="">Alege localitatea</option>
+                  <option value="Arad">Arad</option>
+                  <option value="Valcea">Valcea</option>
+                  <option value="Dolj">Dolj</option>
+                </select>
+                <div class="invalid-feedback">Va rugam alegeti localitatea</div>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-general"
+                  id="deliveryStreet"
+                  placeholder="Strada"
+                  required
+                />
+                <div class="invalid-feedback">Va rugam introduceti strada</div>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <div class="row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input
+                      type="text"
+                      class="form-control form-control-general"
+                      id="deliveryStreetNo"
+                      placeholder="Numar strada"
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      class="form-control form-control-general"
+                      id="deliveryPostalCode"
+                      placeholder="Cod postal"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <div class="row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input
+                      type="text"
+                      class="form-control form-control-general"
+                      id="deliveryBlock"
+                      placeholder="Bloc"
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      class="form-control form-control-general"
+                      id="deliveryStair"
+                      placeholder="Scara"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <div class="row">
+                  <div class="col-sm-6"></div>
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      class="form-control form-control-general"
+                      id="deliveryFloor"
+                      placeholder="Etaj"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <input
+                      type="text"
+                      class="form-control form-control-general"
+                      id="deliveryApt"
+                      placeholder="Apartament"
+                    />
+                  </div>
+                  <div class="col-sm-6"></div>
+                </div>
+              </div>
+              <div class="col-12 mt-3">
+                <div class="form-check yellow">
                   <input
-                    type="text"
-                    class="form-control"
-                    id="floatingInput"
-                    placeholder="Nume Prenume"
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="checkDelivery1"
+                    required
                   />
-                  <label for="floatingInput">Nume Prenume</label>
-                  <div class="invalid-feedback">
-                    Va rugam introduceti numele si prenumele
+                  <label class="form-check-label" for="checkDelivery1">
+                    Confirm imputernicirea unui reprezentat al Centrului de
+                    Formare APSAP pentru expedierea Certificatului de Absolvire
+                    la adresa mai sus mentionat, printr-un serviciu de livrare
+                    securizat.
+                  </label>
+                </div>
+              </div>
+              <div class="col-12 mb-5">
+                <div class="form-check yellow">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="checkDelivery2"
+                    required
+                  />
+                  <label class="form-check-label" for="checkDelivery2">
+                    Confirm imputernicirea unui reprezentat al Centrului de
+                    Formare APSAP pentru expedierea Certificatului de Absolvire
+                    la adresa mai sus mentionat, printr-un serviciu de livrare
+                    securizat.
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="exam-date delivery-prices">
+              <ul class="nav nav-tabs" id="dateTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="date-tab-1"
+                    data-bs-toggle="tab"
+                    data-bs-target="#date-tab-pane-1"
+                    type="button"
+                    role="tab"
+                    aria-controls="date-tab-pane-1"
+                    aria-selected="true"
+                  >
+                    <span class="nav-link-text">
+                      Tarif pastrare certificat <br />(incă 24 luni)
+                    </span>
+                    <span class="exam-price mt-auto">490 <sup>ron</sup></span>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="date-tab-2"
+                    data-bs-toggle="tab"
+                    data-bs-target="#date-tab-pane-2"
+                    type="button"
+                    role="tab"
+                    aria-controls="pdate-tab-pane-2"
+                    aria-selected="false"
+                  >
+                    <span class="nav-link-text">
+                      Tarif serviciu expediere certificat <br />
+                      prin curier securizat
+                    </span>
+                    <span class="exam-price mt-auto">149 <sup>ron</sup></span>
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="dateTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="date-tab-pane-1"
+                  role="tabpanel"
+                  aria-labelledby="date-tab-1"
+                  tabindex="0"
+                >
+                  <div class="exam-offset">
+                    <button
+                      type="submit"
+                      class="btn btn-pill btn-pill-full btn-pill-yellow"
+                    >
+                      Plãteste acum online
+                    </button>
+                    <div class="exam-offset-text mt-3">
+                      Plätiti on-line cu cardul Visa sau Mastercard in deplina
+                      siguranta prin intermediul Netopia Payments
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="date-tab-pane-2"
+                  role="tabpanel"
+                  aria-labelledby="date-tab-2"
+                  tabindex="0"
+                >
+                  <div class="exam-offset">
+                    <button
+                      type="submit"
+                      class="btn btn-pill btn-pill-full btn-pill-yellow"
+                    >
+                      Plãteste acum online
+                    </button>
+                    <div class="exam-offset-text mt-3">
+                      Plätiti on-line cu cardul Visa sau Mastercard in deplina
+                      siguranta prin intermediul Netopia Payments
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </form>
         </div>
-        <div class="container-narrow mt-5 mb-5">
-          <h4 class="exam-date-section-title yellow mb-4 text-center">
-            Alegeti data in care doriti sã sustineti examenul:
-          </h4>
-          <div class="exam-date">
-            <ul class="nav nav-tabs" id="dateTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link active"
-                  id="date-tab-1"
-                  data-bs-toggle="tab"
-                  data-bs-target="#date-tab-pane-1"
-                  type="button"
-                  role="tab"
-                  aria-controls="date-tab-pane-1"
-                  aria-selected="true"
-                >
-                  <span class="exam-date-month">Septembrie</span>
-                  <span class="exam-date-date">17.09.2024</span>
-                  <span class="exam-date-text">Interval orar</span>
-                  <span class="exam-date-hours">10:00 - 12:00</span>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="date-tab-2"
-                  data-bs-toggle="tab"
-                  data-bs-target="#date-tab-pane-2"
-                  type="button"
-                  role="tab"
-                  aria-controls="pdate-tab-pane-2"
-                  aria-selected="false"
-                >
-                  <span class="exam-date-month">Octombrie</span>
-                  <span class="exam-date-date">22.10.2024</span>
-                  <span class="exam-date-text">Interval orar</span>
-                  <span class="exam-date-hours">10:00 - 12:00</span>
-                </button>
-              </li>
-            </ul>
-            <div class="tab-content" id="dateTabContent">
-              <div
-                class="tab-pane fade show active"
-                id="date-tab-pane-1"
-                role="tabpanel"
-                aria-labelledby="date-tab-1"
-                tabindex="0"
-              >
-                <div class="exam-offset">
-                  <a class="btn btn-pill btn-pill-full btn-pill-green" href="#">
-                    Plãteste acum online
-                  </a>
-                  <div class="exam-offset-text mt-3">
-                    Plätiti on-line cu cardul Visa sau Mastercard in deplina
-                    siguranta prin intermediul Netopia Payments
-                  </div>
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="date-tab-pane-2"
-                role="tabpanel"
-                aria-labelledby="date-tab-2"
-                tabindex="0"
-              >
-                <div class="exam-offset">
-                  <a class="btn btn-pill btn-pill-full btn-pill-green" href="#">
-                    Plãteste acum online
-                  </a>
-                  <div class="exam-offset-text mt-3">
-                    Plätiti on-line cu cardul Visa sau Mastercard in deplina
-                    siguranta prin intermediul Netopia Payments
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="container-narrow">
-          <div class="main-content-header">
-            <div class="main-content-header-icon yellow">
-              <svg>
-                <use href="../assets/images/sprite.svg#icon-exam"></use>
-              </svg>
-            </div>
+          <div class="main-content-header mt-5">
             <div
-              class="main-content-header-headings d-flex flex-column justify-content-end"
+              class="main-content-header-text main-content-header-text-big grey"
             >
-              <h4 class="main-content-header-headings-title yellow">
-                Despre examen
-              </h4>
-            </div>
-            <div
-              class="main-content-header-text main-content-header-text-big white"
-            >
-              <p class="mb-4">
-                Examenul de absolvire este sustinut in fata Comisiei de
-                Autorizare a Furnizorilor de Formare Profesional a Adultilor sub
-                egida Ministerului Muncii si Protectiei Sociale si a
-                Ministerului Educatiei Nationale. Examenul dureazã maxim 2 ore.
-                Evaluarea are douã probe: proba de evaluare a cunotintelor
-                teoretice si cea a cunostintelor practice. Pentru verificarea
-                cunostintelor teoretice veti avea de completat pe calculator un
-                test gril iar pentru evaluarea cunostintelor practice veti avea
-                de prezentat proiectul transmis odatã cu suportul de curs.
-              </p>
-              <p>
-                <strong
-                  >Pe durata procesului de examinare trebuie sã aveti:</strong
-                >
-              </p>
-              <div class="ms-4 mb-4">
-                1. Camerã Web functională, <br />
-                2. Microfon functional, <br />
-                3. Conexiune bună la internet (minim 10 MB / secundă), <br />
-                4. Aplicatia ZOOM instalat si actualizat la zi.
-              </div>
-              <p class="yellow">
-                Este important de adãugat faptul cã
-                <strong
-                  >nu este recomandata utilizarea telefonului mobil sau a
-                  tabletei electronice</strong
-                >
-                in timpul examenului. Examenul este obligatoriu sã fie sustinut
-                folosind un dispozitiv de tip desktop sau laptop unde sã aveti
-                instalata aplicatia Microsoft Word sau oricare alt editor al
-                documentelor de tip .doc sau .docx.
-              </p>
-              <p class="grey">
-                In situatia in care Comisia de Examinare constat că regulile de
-                mai sus nu au fost respectate, nu veti putea continua procesul
-                de evaluare si va trebui reluat procesul de reprogramare.
-              </p>
+              Centrul de Formare APSAP vă oune la disoozitie un serviciu de
+              ostrare a certificatului pentru incă 24 de luni dună expirarea
+              termenului de ridicare
+              <br /><br />
+              Acest serviciu implica un cost de 490 lei. Odata platita aceasta
+              taxa va puteti bucura de inca 24 de luni de pastrare a
+              certificatului si il puteti ridica oricând doriti in acest
+              interval de la sediul Centrului de Formare APSAP din Bucuresti,
+              sector 3. str. Turturelelor. or. 62. clădicea Decebal Tower, scara
+              1. etaj 6, camera 12 sau sa folositi celelalte metode de livrare
+              descrise mai sus.
             </div>
           </div>
         </div>

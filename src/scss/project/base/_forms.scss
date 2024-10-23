@@ -3,15 +3,259 @@
   border: none;
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
   padding: 11px 20px 9px;
+
+  &-general {
+    background-color: #2d3845;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(190, 191, 196, 0.4);
+    color: #fff;
+
+    &::placeholder {
+      color: #fff;
+    }
+
+    &:focus {
+      background-color: #2d3845;
+      color: #fff;
+      border-bottom-color: rgba(190, 191, 196, 0.4);
+    }
+  }
 }
 
-// .form-floating > .form-control,
-// .form-floating > .form-control-plaintext {
-//   padding: 18px 20px 17px;
-// }
+.form-select-general {
+  background-color: #2d3845;
+  border: none;
+  border-bottom: 1px solid rgba(190, 191, 196, 0.4);
+  color: #fff;
+  height: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url("../assets/images/select-arrow.svg");
+}
 
-// .form-floating > label {
-//   padding: 18px 31px 17px;
-//   text-transform: uppercase;
-//   font-family: $font-family-medium;
-// }
+.form-floating > .form-control,
+.form-floating > .form-control-plaintext {
+  padding: 12px 15px;
+  height: 45px;
+  min-height: 45px;
+  line-height: normal;
+}
+
+.form-floating > label {
+  padding: 12px 15px;
+  color: $grey-medium-4;
+  font-family: $font-family-light;
+
+  &::after {
+    display: none;
+  }
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-control-plaintext ~ label,
+.form-floating > .form-select ~ label {
+  color: $grey-medium-4;
+  transform: scale(0.8) translateY(-0.5rem) translateX(0.15rem);
+}
+
+.form-check {
+  font-family: $font-family-light;
+  padding-left: 30px;
+  min-height: 22px;
+
+  &-input {
+    width: 22px;
+    height: 22px;
+    margin-left: -24px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    margin-left: -30px !important;
+    margin-top: 3px;
+
+    &:checked {
+      background-color: #fff;
+      border-color: #fff;
+
+      &[type="radio"] {
+        background-image: url("../assets/images/form-check-radio.svg");
+        background-size: 16px 16px;
+      }
+
+      &[type="checkbox"] {
+        background-image: url("../assets/images/form-check-input.svg");
+        background-size: 24px 24px;
+      }
+    }
+  }
+
+  &-label {
+    margin-top: 5px;
+  }
+
+  &.yellow {
+    .form-check-input {
+      border-color: $yellow;
+
+      &:checked {
+        background-color: $yellow;
+        border-color: $yellow;
+      }
+    }
+
+    .form-check-label {
+      color: $yellow;
+    }
+  }
+}
+
+/* Prevent green highlight and checkmark for valid but non-required fields, selects, checkboxes, and radios */
+.was-validated .form-control:valid:not([required]),
+.was-validated .form-check-input:valid:not([required]) {
+  border-color: rgba(
+    190,
+    191,
+    196,
+    0.4
+  ); /* Reset the border color to default */
+  background-image: none; /* Remove the green checkmark icon */
+  box-shadow: none; /* Remove the green box-shadow (for checkboxes and radios) */
+}
+
+.was-validated .form-check-input:invalid,
+.form-check-input.is-invalid {
+  border-color: var(--bs-form-invalid-border-color);
+}
+
+.form-field-wrap {
+  background-color: $grey-medium-5;
+  border-radius: 4px;
+  min-height: 63px;
+  padding: 15px 15px 3px;
+  text-align: left;
+  width: 100%;
+  color: $blue-main;
+  transition: all 0.3s ease-in-out;
+  line-height: 1;
+  height: 100%;
+
+  .form-label {
+    font-size: 11px;
+    margin-bottom: 0;
+    display: block;
+    text-transform: uppercase;
+    font-family: $font-family-medium;
+  }
+
+  .form-control {
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    font-size: 18px;
+    font-family: $font-family-bold;
+    padding: 3px 0;
+    text-transform: uppercase;
+  }
+
+  .form-check-inline {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .form-check-input {
+    margin-top: 0;
+    border-color: #000;
+
+    &:checked {
+      &[type="radio"] {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .form-check-label {
+    font-size: 18px;
+    font-family: $font-family-bold;
+    margin-top: 2px;
+  }
+
+  .form-select {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    font-size: 18px;
+    font-family: $font-family-bold;
+    padding-left: 0;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-position: right 0.2rem center;
+    background-image: url("../assets/images/select-arrow-dark.svg");
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.form-locked {
+  .form-field-wrap {
+    background-color: rgba(162, 162, 171, 0.3);
+    color: $green;
+
+    .form-check-input {
+      display: none;
+    }
+
+    .form-check-inline {
+      padding-left: 0;
+      margin-right: 0;
+    }
+
+    input,
+    .form-check-label,
+    .form-label {
+      pointer-events: none;
+    }
+
+    .form-label {
+      color: #fff;
+    }
+
+    .form-control,
+    .form-select {
+      color: $green;
+    }
+  }
+}
+
+.custom-fields-form {
+  &.was-validated {
+    .form-field-wrap:has(
+        .form-control:invalid,
+        .form-check-input:invalid,
+        .form-select:invalid:not([multiple]):not([size])
+      ) {
+      height: auto;
+
+      + .invalid-feedback {
+        display: block;
+      }
+    }
+
+    .form-field-wrap:has(.form-control:valid, .form-check-input:valid) {
+      height: auto;
+    }
+  }
+
+  &.was-validated .form-check-input:valid,
+  .form-check-input.is-valid {
+    border-color: #3c7d3e;
+  }
+
+  &.was-validated .form-check-input:valid ~ .form-check-label,
+  .form-check-input.is-valid ~ .form-check-label {
+    color: #3c7d3e;
+  }
+}
