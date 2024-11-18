@@ -116,8 +116,17 @@ body {
     height: 55px;
   }
 
+  &-small {
+    width: 22px;
+    height: 37px;
+  }
+
   &-green {
     fill: $green;
+  }
+
+  &-white {
+    fill: #fff;
   }
 }
 

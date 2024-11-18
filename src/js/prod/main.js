@@ -80,6 +80,22 @@ var addZero = function addZero(x) {
 };
 "use strict";
 
+$(document).ready(function () {
+  $(".js-toggle-course-list-panel").click(function () {
+    // Toggle the collapsed class on the sidebar
+    $(".course-sidebar").toggleClass("collapsed");
+
+    // Hide or show everything inside course-sidebar except js-toggle-course-list-panel
+    $(".course-sidebar").children().toggle();
+
+    // Hide everything in course-page-video-toolbar except js-toggle-course-list-panel
+    $(".course-page-video-toolbar").children().not(".js-toggle-course-list-panel").toggle();
+    $(".course-page-video-toolbar").toggleClass("collapsed");
+    $(".course-detail-wrap").toggleClass("collapsed");
+  });
+});
+"use strict";
+
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
   'use strict';
@@ -212,6 +228,9 @@ $(window).on("scroll", function () {
     mainHeader.removeClass("header-sticky");
     $("body").removeClass("header-sticky-body");
   }
+});
+$(document).on("hide.bs.dropdown", ".header", function () {
+  $("body").removeClass("nav-active");
 });
 "use strict";
 

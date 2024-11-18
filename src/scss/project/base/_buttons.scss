@@ -202,3 +202,31 @@
     }
   }
 }
+
+.btn-left-arrow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  svg {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: -1px;
+  }
+
+  &-white {
+    svg {
+      fill: #fff;
+    }
+
+    &:active,
+    &:hover,
+    &:first-child:active,
+    &:focus-visible {
+      svg {
+        fill: #000;
+      }
+    }
+  }
+}

@@ -143,7 +143,16 @@
 
     .course-modules-list-inner {
       max-height: 475px;
-      overflow: scroll;
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $grey-dark-3;
+        border-radius: 10px;
+      }
 
       @media (max-width: 1550px) {
         padding-right: 7px;
@@ -168,6 +177,13 @@
       display: flex;
       color: $grey-medium-2;
 
+      > a {
+        display: flex;
+        text-decoration: none;
+        width: 100%;
+        color: $grey-medium-2;
+      }
+
       &-icon {
         width: 30px;
         margin-top: 16px;
@@ -187,10 +203,15 @@
         padding: 19px 0 17px;
       }
 
-      &.active {
+      &.playable,
+      &.played {
         pointer-events: all;
         cursor: pointer;
         color: #fff;
+
+        > a {
+          color: #fff;
+        }
 
         &:hover {
           .course-modules-list-item-details {
@@ -213,8 +234,183 @@
           }
         }
       }
+
+      &.active {
+        color: $green;
+
+        > a {
+          color: $green;
+        }
+
+        .course-modules-list-item-details {
+          background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0)
+          );
+        }
+      }
     }
   }
+}
+
+.course-detail-wrap {
+  display: flex;
+  gap: 15px;
+
+  &.collapsed {
+    padding-left: 45px;
+    gap: 0;
+
+    @include media-breakpoint-down(xl) {
+      padding-left: 0;
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+}
+
+.course-sidebar {
+  width: 350px;
+  flex-shrink: 0;
+  position: sticky;
+  max-height: calc(98vh - 50px);
+  margin-top: 50px;
+  overflow: auto;
+  background-color: rgba(16, 18, 40, 0.8);
+
+  &::-webkit-scrollbar {
+    background: transparent;
+  }
+
+  @include media-breakpoint-down(xxl) {
+    width: 300px;
+  }
+
+  @include media-breakpoint-down(xl) {
+    order: 1;
+    width: 100%;
+    position: static;
+    max-height: none;
+    margin-top: 0;
+  }
+
+  .course-modules-list-inner {
+    max-height: none;
+    overflow: auto;
+    padding-right: 15px;
+  }
+
+  .course-modules-list-item-details {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cml-duration {
+    margin-left: 38px;
+    font-size: 14px;
+  }
+}
+
+.course-video {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  @include media-breakpoint-down(xl) {
+    order: 0;
+  }
+
+  &-inner {
+    max-width: 1400px;
+    width: 100%;
+  }
+
+  &-title {
+    font-size: 30px;
+    font-family: $font-family-bold;
+  }
+
+  &-subtitle {
+    font-size: 22px;
+    font-family: $font-family-light;
+  }
+}
+
+.course-page-video-toolbar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 5px;
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  width: 350px;
+
+  @include media-breakpoint-down(xxl) {
+    width: 300px;
+  }
+
+  .btn {
+    padding-top: 5px;
+    padding-bottom: 4px;
+    align-self: center;
+    font-size: 14px;
+  }
+
+  &.collapsed {
+    width: 45px;
+    overflow: hidden;
+
+    .toggle-course-list-panel svg {
+      transform: rotate(0);
+    }
+  }
+}
+
+.toggle-course-list-panel {
+  border: none;
+  border-radius: 6px;
+  background: none;
+  align-self: center;
+  margin-left: auto;
+
+  svg {
+    fill: #fff;
+    width: 26px;
+    height: 26px;
+    transform: rotate(180deg);
+  }
+
+  @include media-breakpoint-down(xl) {
+    display: none;
+  }
+}
+
+.course-sidebar.collapsed {
+  width: 0;
+  overflow: hidden;
+
+  @include media-breakpoint-down(xl) {
+    width: 100%;
+    overflow: visible;
+
+    .course-modules-list-wrapper {
+      display: block !important;
+    }
+  }
+}
+
+.cml-inner {
+  display: flex;
+  gap: 15px;
+}
+
+.course-page-detail.header-sticky-body {
+  padding-top: 0;
 }
 
 .cml-number {

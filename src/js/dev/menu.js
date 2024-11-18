@@ -23,3 +23,7 @@ $(window).on("scroll", function () {
     $("body").removeClass("header-sticky-body");
   }
 });
+
+$(document).on("hide.bs.dropdown", ".header", function () {
+  $("body").removeClass("nav-active");
+});
